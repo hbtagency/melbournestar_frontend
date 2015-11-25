@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'futura_lightregular';
+  src: url("../../fonts/ufonts.com_futurabt-light-opentype.eot");
+  src: url("../../fonts/ufonts.com_futurabt-light-opentype.eot?#iefix") format("embedded-opentype"), url("../../fonts/ufonts.com_futurabt-light-opentype.woff2") format("woff2"), url("../../fonts/ufonts.com_futurabt-light-opentype.woff") format("woff"), url("../../fonts/ufonts.com_futurabt-light-opentype.ttf") format("truetype"), url("../../fonts/ufonts.com_futurabt-light-opentype.svg#futura_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'futura_bkbook';
+  src: url("../../fonts/ufonts.com_futura-book-webfont.eot");
+  src: url("../../fonts/ufonts.com_futura-book-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ufonts.com_futura-book-webfont.woff2") format("woff2"), url("../../fonts/ufonts.com_futura-book-webfont.woff") format("woff"), url("../../fonts/ufonts.com_futura-book-webfont.ttf") format("truetype"), url("../../fonts/ufonts.com_futura-book-webfont.svg#futura_bkbook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Color */
+/* Break Points */
+/* This section needs to be finished */
+/* Cross browser */
+/***Global effects*/
+body {
+  font-family: "futura_lightregular"; }
+
+.transparent-bg {
+  background-color: rgba(0, 0, 0, 0.4); }
+  .transparent-bg-darker {
+    background-color: rgba(0, 0, 0, 0.6); }
+
+a {
+  cursor: pointer; }
+
+.light-gray {
+  background-color: #eff0f2; }
+
+.black {
+  background-color: #000; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/***Position*/
+.text-center {
+  text-align: center; }
+
+.inline-block {
+  display: inline-block; }
+
+.absolute-position {
+  position: absolute; }
+
+.absolute-left {
+  left: 0; }
+
+.absolute-right {
+  right: 0; }
+
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+
+.half-width {
+  width: 50%; }
+
+/* Button */
+.button {
+  padding: 12px 30px 12px 30px;
+  font-weight: bold;
+  border: 2px solid;
+  color: white; }
+
+/* End of global */
+body {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important; }
+
+.top_nav {
+  background-color: #fff;
+  height: 34px;
+  width: 100%;
+  display: block;
+  border: 1px solid black;
+  padding-top: 5px; }
+  .top_nav .container {
+    padding: 0; }
+    .top_nav .container .inline-block {
+      height: 34px;
+      float: right; }
+    .top_nav .container .navbar {
+      margin-right: 15px; }
+      .top_nav .container .navbar ul li {
+        height: 34px;
+        padding: 0; }
+        .top_nav .container .navbar ul li a {
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          color: #000;
+          padding: 0; }
+          .top_nav .container .navbar ul li a:hover {
+            background-color: #fff;
+            color: gainsboro; }
+    .top_nav .container .language {
+      width: 70px; }
+    .top_nav .container .search {
+      width: 70px; }
+
+.main_nav {
+  height: 95px;
+  background-color: #002a5f;
+  text-transform: uppercase; }
+  .main_nav .container {
+    padding-left: 309px;
+    padding-right: 200px;
+    height: 95px; }
+    .main_nav .container .left {
+      float: left; }
+    .main_nav .container .right {
+      float: right; }
+    .main_nav .container .logo {
+      width: 300px;
+      margin-left: -300px;
+      padding-top: 20px; }
+      .main_nav .container .logo span.logo_span {
+        width: 300px;
+        height: 52px;
+        display: block;
+        background-size: cover; }
+    .main_nav .container nav.navbar {
+      width: 95%;
+      margin-bottom: 0px;
+      border: none; }
+      .main_nav .container nav.navbar ul {
+        width: 100%; }
+        .main_nav .container nav.navbar ul li.root {
+          width: 18.6%; }
+          .main_nav .container nav.navbar ul li.root a {
+            height: 94px;
+            padding-top: 35px;
+            text-align: center;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            color: #fff;
+            padding-bottom: 0px; }
+            .main_nav .container nav.navbar ul li.root a:hover {
+              background-color: #1e2e41; }
+            .main_nav .container nav.navbar ul li.root a:visited {
+              background-color: #1e2e41; }
+          .main_nav .container nav.navbar ul li.root .dropdown-menu {
+            background-color: #002a5f; }
+          .main_nav .container nav.navbar ul li.root .level-2 {
+            padding: 0; }
+            .main_nav .container nav.navbar ul li.root .level-2 li a {
+              height: 40px;
+              padding-top: 10px; }
+    .main_nav .container .dropdown-menu li:hover {
+      background: black !important; }
+    .main_nav .container .dropdown-menu li a:hover {
+      background: black !important; }
+    .main_nav .container .buy_tickets {
+      width: 200px;
+      margin-right: -200px;
+      background-color: #92d400;
+      height: 96px;
+      text-align: center;
+      margin-top: -1px; }
+      .main_nav .container .buy_tickets .uppercase {
+        display: block;
+        margin-top: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff; }
+
+.featured-home {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  background-size: cover !important;
+  overflow: hidden;
+  text-align: center;
+  height: 754px; }
+  .featured-home .banner-text {
+    width: 500px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    color: white; }
+  .featured-home .floating-star {
+    position: absolute;
+    left: -100px;
+    bottom: -100px; }
+  .featured-home .button {
+    padding: 21px 20px 21px 20px;
+    position: relative;
+    top: 60px; }
+
+.featured_home_info {
+  text-align: center;
+  color: #999999; }
+  .featured_home_info .container .infomation {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 95px; }
+  .featured_home_info .container .info_content {
+    color: black;
+    font-size: 18px;
+    font-weight: 500; }
+  .featured_home_info .container .nav_icon {
+    position: relative;
+    top: -3px; }
+
+.whats_on {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "futura_bkbook";
+  font-size: 40px;
+  font-weight: 30px; }
+  .whats_on .whatson_content {
+    margin-top: 30px; }
+  .whats_on .whatson_carousel_img {
+    max-width: 100%; }
+  .whats_on .whatson_carousel_content {
+    margin-top: 10px;
+    font-family: "futura_lightregular";
+    font-size: 20px; }
+  .whats_on .whatson_carousel_content_title {
+    font-size: 16px; }
+
+.whats_new {
+  margin-top: 60px;
+  text-align: center; }
+  .whats_new .whats_news_title {
+    color: white;
+    padding-top: 50px;
+    font-size: 40px; }
+  .whats_new .whatsnew_content {
+    margin-top: 30px; }
+  .whats_new .whats_news_image_wrapper {
+    width: 100%;
+    height: 183.49px;
+    background-color: white; }
+  .whats_new .whatsnew_carousel_img {
+    max-width: 100%;
+    max-height: 100%; }
+  .whats_new .whatsnew_carousel_title {
+    color: white; }
+  .whats_new .whatsnew_carousel_content {
+    color: white; }

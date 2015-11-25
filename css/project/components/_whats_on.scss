@@ -1,0 +1,25 @@
+.whats_on{
+	margin-top: 40px;
+	text-align: center;
+	font-family: $font-fu-book;
+	font-size: 40px;
+	font-weight: 30px;
+
+	.whatson_content{
+		margin-top: 30px;
+	}
+
+	.whatson_carousel_img{
+		max-width: 100%;
+	}
+
+	.whatson_carousel_content{
+		margin-top: 10px;
+		font-family: $font-fu-l;
+		font-size: 20px;
+	}
+
+	.whatson_carousel_content_title{
+		font-size: 16px;
+	}
+}

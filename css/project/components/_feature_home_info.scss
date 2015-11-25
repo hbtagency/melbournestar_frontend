@@ -1,0 +1,23 @@
+.featured_home_info{
+	text-align: center;
+	color: #999999;
+
+	.container{
+		.infomation{
+			margin-top: 20px;
+			font-size: 20px;
+			font-weight: 95px;
+		}
+
+		.info_content{
+			color: black;
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		.nav_icon{
+			position: relative;
+			top: -3px;
+		}
+	}
+}
