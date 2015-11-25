@@ -1,5 +1,3 @@
-# gulp_frontend_famework
-
 Readme:
 
 1.Install Node.js
@@ -15,7 +13,7 @@ Gulp-minify-css
 Gulp-sass 
 - Run "npm install --save-dev gulp-sass"
 Gulp-batch
-- Run "npm install --save-dev gulp-sass"
+- Run "npm install --save-dev gulp-batch"
 Browser-sync
 - Run "npm install --save-dev browser-sync")
 
