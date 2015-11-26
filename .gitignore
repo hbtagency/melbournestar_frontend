@@ -3,3 +3,6 @@
 npm-debug.log
 npn-debug.log
 **/html_components/
+/melstar323/nbproject/private/
+/nbproject/private/
+**/nbproject/
