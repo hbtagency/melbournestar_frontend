@@ -1,3 +1,4 @@
+// Whats_On
 $(".whatson_content").hover(function(){
 
 	if($(this).children('.whatson_carousel_textarea').first().hasClass('centered')){
@@ -9,6 +10,22 @@ $(".whatson_content").hover(function(){
 $(".whatson_content").mouseleave(function(){
 	if($(this).children('.whatson_carousel_textarea').first().hasClass('centered')){
 		$(this).children('.whatson_carousel_textarea').first().removeClass('centered');
+	}else{
+	}
+});
+
+// Whats New
+$(".whatsnew_content").hover(function(){
+
+	if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
+	}else{
+		$(this).children('.whatsnew_carousel_textarea').first().addClass('centered');
+	}
+});
+
+$(".whatsnew_content").mouseleave(function(){
+	if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
+		$(this).children('.whatsnew_carousel_textarea').first().removeClass('centered');
 	}else{
 	}
 });

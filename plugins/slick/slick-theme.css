@@ -86,7 +86,7 @@
 }
 .slick-prev:before
 {
-    content: url('carousel_left.jpg');
+    content: url('carousel_left.png');
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -104,7 +104,7 @@
 }
 .slick-next:before
 {
-    content: url('carousel_right.jpg');
+    content: url('carousel_right.png');
 }
 [dir='rtl'] .slick-next:before
 {

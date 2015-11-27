@@ -69,6 +69,9 @@ a {
 .half-width {
   width: 50%; }
 
+.center {
+  margin: 0 auto; }
+
 /* Button */
 .button {
   padding: 12px 30px 12px 30px;
@@ -261,9 +264,14 @@ a.menu--link {
   .featured-home .button {
     padding: 17px 20px 17px 20px;
     position: relative;
-    top: 60px; }
+    top: 60px;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
     .featured-home .button:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      box-shadow: inset 0 0 0 2px white; }
 
 .featured_home_info {
   text-align: center;
@@ -299,16 +307,20 @@ a.menu--link {
       .whats_on .whatson_content .centered .whatson_carousel_content {
         color: #fff; }
     .whats_on .whatson_content:hover span.whatson_hover_content {
-      opacity: 1; }
+      opacity: 1;
+      height: 189px; }
+    .whats_on .whatson_content:hover .whatson_view_button {
+      display: block; }
   .whats_on .image_wrapper {
     height: 188px; }
   .whats_on .whatson_carousel_img {
     max-width: 100%; }
   .whats_on .whatson_carousel_textarea {
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; }
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    height: 50px; }
     .whats_on .whatson_carousel_textarea .whatson_carousel_title {
       margin-top: 10px;
       font-family: "futura_lightregular";
@@ -319,10 +331,12 @@ a.menu--link {
       font-size: 13px;
       letter-spacing: -0.3px;
       color: #696969; }
+    .whats_on .whatson_carousel_textarea .whatson_view_button {
+      display: none; }
     .whats_on .whatson_carousel_textarea .whatson_view_button a {
       color: white;
       text-decoration: none;
-      border: 1px solid;
+      border: 2px solid;
       font-size: 16px;
       font-family: "futura_bold";
       padding: 10px 25px 5px 25px;
@@ -331,18 +345,22 @@ a.menu--link {
       -o-transition: all 0.1s ease;
       transition: all 0.1s ease; }
       .whats_on .whatson_carousel_textarea .whatson_view_button a:hover {
-        box-shadow: inset 0 0 0 2px #fff; }
+        box-shadow: inset 0 0 0 1px #fff; }
   .whats_on .whatson_hover_content {
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    height: 0px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     display: table;
-    height: 189px;
     left: 15px;
     position: absolute;
-    top: 0;
     width: 360px;
-    opacity: 0;
-    overflow: hidden; }
+    opacity: 1;
+    overflow: hidden;
+    bottom: 60px; }
 
 .slick-initialized .slick-slide {
   outline: none; }
@@ -355,15 +373,55 @@ a.menu--link {
     padding-top: 50px;
     font-size: 40px; }
   .whats_new .whatsnew_content {
-    margin-top: 30px; }
+    margin-top: 30px;
+    height: 250px; }
+    .whats_new .whatsnew_content .centered {
+      transform: translate(0, -150px); }
+    .whats_new .whatsnew_content:hover span.whatsnew_hover_content {
+      height: 189px; }
+    .whats_new .whatsnew_content:hover .whatsnew_play_button {
+      display: block; }
   .whats_new .whats_news_image_wrapper {
     width: 100%;
-    height: 183.49px;
+    height: 189px;
     background-color: white; }
   .whats_new .whatsnew_carousel_img {
     max-width: 100%;
     max-height: 100%; }
-  .whats_new .whatsnew_carousel_title {
-    color: white; }
-  .whats_new .whatsnew_carousel_content {
-    color: white; }
+  .whats_new .whatsnew_carousel_textarea {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    min-height: 50px; }
+    .whats_new .whatsnew_carousel_textarea .whatsnew_carousel_title {
+      margin-top: 10px;
+      font-family: "futura_lightregular";
+      font-size: 15px;
+      letter-spacing: -0.3px;
+      color: #fff; }
+    .whats_new .whatsnew_carousel_textarea .whatsnew_carousel_content {
+      margin-top: 10px;
+      font-family: "futura_lightregular";
+      font-size: 13px;
+      letter-spacing: -0.3px;
+      color: #fff; }
+    .whats_new .whatsnew_carousel_textarea .whatsnew_play_button {
+      display: none; }
+    .whats_new .whatsnew_carousel_textarea .whatsnew_play_button a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: "futura_bold"; }
+  .whats_new .whatsnew_hover_content {
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    display: table;
+    position: absolute;
+    width: 360px;
+    overflow: hidden;
+    bottom: 60px; }
