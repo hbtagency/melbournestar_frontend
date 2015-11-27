@@ -12,7 +12,6 @@
         <!-- Title of the page | Site name from Global Settings -->
         <link rel="stylesheet" href="css/final/style.css">
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
-
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
     </head>
 
@@ -21,12 +20,55 @@
             <!-- Top Nav --> 
             <div class="top_nav">
                 <div class="container">
+                    <!-- Search component --> 
                     <div class="search inline-block">
-                        search
+                        <ul class="nav">
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle inline-block search_button" data-toggle="dropdown">
+                              </a>
+                              <ul class="dropdown-menu">
+                                    <li class="navbar--list-item">
+                                        <form action="#" method="post">
+                                            <input type="text" value="" placeholder="Enter key words ..." />
+                                            <a href="#" class="submit search_button pull-right">
+                                            </a>
+                                        </form>
+                                    </li>
+                              </ul>
+                            </li>
+                          </ul>
                     </div>
+                    <!-- End of search component -->
+                    
+                    <!-- Language component --> 
                     <div class="language inline-block">
-                        language
+                        <ul class="nav">
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+						<img src="img/ausflag.jpg" alt="$alt" class="center block "/>
+                                                <span class="block text">AUS</span>
+                                                <img src="img/arrow_down.jpg" class="center block"/>
+                              </a>
+                              <ul class="dropdown-menu">
+                                    <li class="navbar--list-item">
+                                        <a class="menu--link" href="#">
+                                            <img src="img/ausflag.jpg" alt="$alt" />
+                                            <span>English</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar--list-item">
+                                        <a class="menu--link" href="#">
+                                            <img src="img/ausflag.jpg" alt="$alt" />
+                                            <span>Chinese</span>
+                                        </a>
+                                    </li>
+                              </ul>
+                            </li>
+                          </ul>
                     </div>
+                    <!-- Language component -->
+                    
+                    
                     <nav class="navbar inline-block">
                         <ul class="nav navbar-nav level-1">
                             <li class="root">
@@ -47,7 +89,7 @@
                 <div class="container">
                     <!-- logo -->
                     <div class="logo inline-block left">
-                        <span class="logo_span" style="background:url('img/logo.png') no-repeat"></span>
+                        <span class="logo_span"></span>
                     </div>
                     <!-- main navbar -->
                     <nav class="navbar inline-block left">
@@ -91,7 +133,7 @@
                             <li class="root dropdown">
                                 <!-- Link tag only if link is present in backend -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown 
+                                    <span class="menu--link-text current-parent">Dropdown</span>
                                     <span class="caret"></span>
                                 </a>
                                 <!-- Second level Nav Item -->

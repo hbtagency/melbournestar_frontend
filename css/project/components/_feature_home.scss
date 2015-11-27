@@ -9,7 +9,7 @@
     height:754px;
 
     .banner-text{
-        width:500px;
+        width:450px;
         display:block;
         text-align: center;
         margin:auto;
@@ -24,8 +24,12 @@
     }
 
     .button{
-        padding: 21px 20px 21px 20px;
+        padding: 17px 20px 17px 20px;
         position: relative;
         top: 60px;
+        &:hover{
+            text-decoration: none;
+            
+        }
     }
 }

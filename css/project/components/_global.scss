@@ -41,6 +41,7 @@ body{font-family: $font-fu-l}
     }
 }
 a{cursor: pointer;}
+//eg.@include transition(all 0.4s ease);
 .light-gray{background-color:$silver_gray}
 .black{background-color:#000;}
 .uppercase{text-transform: uppercase;}

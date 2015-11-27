@@ -6686,12 +6686,98 @@ body {
   color: gainsboro;
 }
 
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
 .top_nav .container .language {
-  width: 70px;
+  margin-right: 15px;
+  font-size: 13px;
 }
 
-.top_nav .container .search {
-  width: 70px;
+.top_nav .container .language ul.nav li.dropdown {
+  padding-top: 2px;
+}
+
+.top_nav .container .language ul.nav li.dropdown a {
+  padding: 0 !important;
+  height: 25px;
+}
+
+.top_nav .container .language ul.nav li.dropdown a:hover {
+  background-color: #fff;
+}
+
+.top_nav .container .language ul.nav li.dropdown a:focus {
+  background-color: #fff;
+}
+
+.top_nav .container .language ul.nav li.dropdown a:visited {
+  background-color: #fff;
+}
+
+.top_nav .container .language ul.nav li.dropdown a img.center {
+  margin-bottom: 4px;
+}
+
+.top_nav .container .language ul.nav li.dropdown .dropdown-menu {
+  min-width: 50px;
+  width: 100px;
+  margin-top: 22px;
+  margin-left: -5px;
+  padding-left: 5px;
+}
+
+.top_nav .container .language ul.nav li.dropdown .dropdown-menu li.navbar--list-item display:inline-block
+a.menu--link {
+  display: inline-block;
+}
+
+.top_nav .container .search .search_button {
+  background: url("../../img/search.png") no-repeat;
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin-top: 2px;
+}
+
+.top_nav .container .search ul.nav li.dropdown a {
+  padding: 0;
+  height: 25px;
+}
+
+.top_nav .container .search ul.nav li.dropdown a:hover {
+  background-color: #fff;
+}
+
+.top_nav .container .search ul.nav li.dropdown a:focus {
+  background-color: #fff;
+}
+
+.top_nav .container .search ul.nav li.dropdown a:visited {
+  background-color: #fff;
+}
+
+.top_nav .container .search ul.nav li.dropdown .dropdown-menu {
+  margin-top: 25px;
+  width: 270px;
+  margin-left: -245px;
+}
+
+.top_nav .container .search ul.nav li.dropdown .dropdown-menu li.navbar--list-item {
+  display: inline-block;
+  padding: 5px 5px 2px 8px;
+}
+
+.top_nav .container .search ul.nav li.dropdown .dropdown-menu li.navbar--list-item input[type=text] {
+  width: 230px;
+}
+
+.top_nav .container .search ul.nav li.dropdown .dropdown-menu li.navbar--list-item a.search_button {
+  margin-left: 5px !important;
+  margin-top: 3px;
 }
 
 .main_nav {
@@ -6715,20 +6801,20 @@ body {
 }
 
 .main_nav .container .logo {
-  width: 300px;
-  margin-left: -300px;
-  padding-top: 20px;
+  width: 290px;
+  margin-left: -290px;
+  padding-top: 22px;
 }
 
 .main_nav .container .logo span.logo_span {
-  width: 300px;
+  width: 290px;
   height: 52px;
   display: block;
-  background-size: cover;
+  background: url("../../img/logo.png") no-repeat;
 }
 
 .main_nav .container nav.navbar {
-  width: 95%;
+  width: 100%;
   margin-bottom: 0px;
   border: none;
 }
@@ -6738,7 +6824,7 @@ body {
 }
 
 .main_nav .container nav.navbar ul li.root {
-  width: 18.6%;
+  width: 19.6%;
 }
 
 .main_nav .container nav.navbar ul li.root a {
@@ -6783,7 +6869,7 @@ body {
 }
 
 .main_nav .container .buy_tickets {
-  width: 200px;
+  width: 175px;
   margin-right: -200px;
   background-color: #92d400;
   height: 96px;
@@ -6810,7 +6896,7 @@ body {
 }
 
 .featured-home .banner-text {
-  width: 500px;
+  width: 450px;
   display: block;
   text-align: center;
   margin: auto;
@@ -6825,9 +6911,13 @@ body {
 }
 
 .featured-home .button {
-  padding: 21px 20px 21px 20px;
+  padding: 17px 20px 17px 20px;
   position: relative;
   top: 60px;
+}
+
+.featured-home .button:hover {
+  text-decoration: none;
 }
 
 .featured_home_info {

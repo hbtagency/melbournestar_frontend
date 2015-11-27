@@ -12,26 +12,25 @@
         .right{
             float:right;
         }
-
         .logo{
-            width:300px;
-            margin-left:-300px;
-            padding-top:20px;
+            width:290px;
+            margin-left:-290px;
+            padding-top:22px;
             span.logo_span{
-                width:300px;
+                width:290px;
                 height:52px;
                 display:block;
-                background-size:cover;
+                background:url('../../../img/logo.png') no-repeat;
             }
         }
         nav.navbar{
-            width:95%;
+            width:100%;
             margin-bottom:0px;
             border:none;
             ul{
                 width:100%;
                 li.root{
-                    width:18.6%;
+                    width:19.6%;
                     a{
                         height:94px;
                         padding-top:35px;
@@ -68,20 +67,6 @@
         .dropdown-menu li a:hover{
             background: black !important;
         }
-        .buy_tickets{
-            width:200px;
-            margin-right:-200px;
-            background-color:$green;
-            height:96px;
-            text-align: center;
-            margin-top:-1px;
-            .uppercase{
-                display:block;
-                margin-top:35px;
-                font-size:20px;
-                font-weight:bold;
-                color:#fff;
-            }
-        }
     }
 }
+@import "components/__tickets.scss";

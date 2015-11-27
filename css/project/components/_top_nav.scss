@@ -29,12 +29,8 @@
                }
            }
        }
-       .language{
-           width:70px;
-       }
-       .search{
-           width:70px;
-       }
-   }
+    }
 }
 
+@import '__language.scss';
+@import '__search.scss';
