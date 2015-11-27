@@ -11,7 +11,7 @@ gulp.task('default', function() {
         // server: {
         //     baseDir: "./",
         // }
-        proxy: "localhost:80/melstar/layout.html",
+        proxy: "http://localhost/melStar/melbournestar_frontend/home.html",
         // browser: ["google chrome", "firefox", "iexplore"]
     });
 
