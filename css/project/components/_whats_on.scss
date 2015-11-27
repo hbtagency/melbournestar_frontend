@@ -7,19 +7,79 @@
 
 	.whatson_content{
 		margin-top: 30px;
+		height:250px;
+
+		.centered{
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    transform: translate(0,-130px);
+
+    		.whatson_carousel_title{
+				color: white;
+			}
+
+			.whatson_carousel_content{
+				color: white;
+			}
+
+		}
+
+		&:hover{
+			span.whatson_hover_content{
+				opacity: 1;
+			}
+		}
+	}
+
+	.image_wrapper{
+		height: 188px;
+		// &:hover{
+		// 	span.whatson_hover_content{
+		// 		opacity: 1;
+		// 	}
+		// }
 	}
 
 	.whatson_carousel_img{
 		max-width: 100%;
 	}
 
-	.whatson_carousel_content{
-		margin-top: 10px;
-		font-family: $font-fu-l;
-		font-size: 20px;
+	.whatson_carousel_textarea{
+
+		@include transition(all 0.4s ease 0s);
+
+		.whatson_carousel_title{
+			margin-top: 10px;
+			font-family: $font-fu-l;
+			font-size: 17px;
+			color: #000000;
+		}
+
+
+		.whatson_carousel_content{
+			font-size: 15px;
+			color: $content_gray;
+		}	
 	}
 
-	.whatson_carousel_content_title{
-		font-size: 16px;
+	.whatson_hover_content {
+		background: rgba(0,0,0,0.5);
+		color: white;
+		display: table;
+		height: 189px;
+		left: 15px;
+		position: absolute;
+		top: 0;
+		width: 360px;
+		opacity: 0;
+		overflow: hidden;
 	}
+	
+
+}
+
+// Slick outline
+.slick-initialized .slick-slide{
+	outline: none;
 }

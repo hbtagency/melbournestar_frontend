@@ -8,11 +8,9 @@ var browserSync = require('browser-sync');
 
 gulp.task('default', function() {
   browserSync.init({
-        // server: {
-        //     baseDir: "./",
-        // }
-        proxy: "localhost:80/melstar/layout.html",
-        // browser: ["google chrome", "firefox", "iexplore"]
+        
+        //change proxy server to your localhost
+        proxy: "http://localhost/melStar/melbournestar_frontend/home.html",
     });
 
   gulp.start('sass');
@@ -34,6 +32,9 @@ gulp.task('default', function() {
         return gulp.src('*.html')
               .pipe(browserSync.reload({stream:true}));
     }));
+  watch('plugins/*/*', batch(function (events, done) {
+          gulp.start('sass', done);
+    }));
 
 });
 
@@ -49,8 +50,10 @@ gulp.task('sass', function () {
 //Step 2: concat CSS files
 gulp.task('concat', function () {
   console.log('#=>concat');
-  // return gulp.src('css/cache/sassOutput/*.css')
-  return gulp.src(['css/bootstrap/*.css','css/plugins/*.css','css/cache/sassOutput/*.css'])
+  return gulp.src(['css/bootstrap/*.css',
+                   'css/plugins/*.css',
+                   'css/cache/sassOutput/*.css',
+                   'plugins/*/*.css'])
     .pipe(concatCss("style.css"))
     .pipe(gulp.dest('css/cache/conOutput/'));
 });

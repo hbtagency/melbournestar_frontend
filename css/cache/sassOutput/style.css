@@ -280,15 +280,50 @@ a.menu--link {
   font-size: 40px;
   font-weight: 30px; }
   .whats_on .whatson_content {
-    margin-top: 30px; }
+    margin-top: 30px;
+    height: 250px; }
+    .whats_on .whatson_content .centered {
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: translate(0, -130px); }
+      .whats_on .whatson_content .centered .whatson_carousel_title {
+        color: white; }
+      .whats_on .whatson_content .centered .whatson_carousel_content {
+        color: white; }
+    .whats_on .whatson_content:hover span.whatson_hover_content {
+      opacity: 1; }
+  .whats_on .image_wrapper {
+    height: 188px; }
   .whats_on .whatson_carousel_img {
     max-width: 100%; }
-  .whats_on .whatson_carousel_content {
-    margin-top: 10px;
-    font-family: "futura_lightregular";
-    font-size: 20px; }
-  .whats_on .whatson_carousel_content_title {
-    font-size: 16px; }
+  .whats_on .whatson_carousel_textarea {
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s; }
+    .whats_on .whatson_carousel_textarea .whatson_carousel_title {
+      margin-top: 10px;
+      font-family: "futura_lightregular";
+      font-size: 17px;
+      color: #000000; }
+    .whats_on .whatson_carousel_textarea .whatson_carousel_content {
+      font-size: 15px;
+      color: #696969; }
+  .whats_on .whatson_hover_content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: table;
+    height: 189px;
+    left: 15px;
+    position: absolute;
+    top: 0;
+    width: 360px;
+    opacity: 0;
+    overflow: hidden; }
+
+.slick-initialized .slick-slide {
+  outline: none; }
 
 .whats_new {
   margin-top: 60px;
