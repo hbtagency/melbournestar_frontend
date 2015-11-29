@@ -13,32 +13,30 @@
 		    position: absolute;
 		    left: 0;
 		    right: 0;
-		    transform: translate(0,-130px);
+		    transform: translate(0,-150px);
 
     		.whatson_carousel_title{
-				color: white;
+				color: #fff;
 			}
 
 			.whatson_carousel_content{
-				color: white;
+				color: #fff;
 			}
-
 		}
 
 		&:hover{
 			span.whatson_hover_content{
 				opacity: 1;
+				height: 189px;	
+			}
+			.whatson_view_button{
+				display: block;
 			}
 		}
 	}
 
 	.image_wrapper{
 		height: 188px;
-		// &:hover{
-		// 	span.whatson_hover_content{
-		// 		opacity: 1;
-		// 	}
-		// }
 	}
 
 	.whatson_carousel_img{
@@ -46,37 +44,59 @@
 	}
 
 	.whatson_carousel_textarea{
-
-		@include transition(all 0.4s ease 0s);
+		@include transition(all 0.5s ease 0s);
+		height: 50px;
 
 		.whatson_carousel_title{
 			margin-top: 10px;
 			font-family: $font-fu-l;
-			font-size: 17px;
+			font-size: 15px;
+		    letter-spacing: -0.3px;
 			color: #000000;
 		}
 
-
 		.whatson_carousel_content{
-			font-size: 15px;
+			font-size: 13px;
+		    letter-spacing: -0.3px;
 			color: $content_gray;
 		}	
+
+		.whatson_view_button{
+			display: none;
+		}
+
+		.whatson_view_button a{
+			color: white;
+			text-decoration: none;
+			border: 2px solid;
+			font-size: 16px;
+			font-family: $font-fu-bold;	
+			padding: 10px 25px 5px 25px;
+			@include transition(all 0.1s ease);
+
+			&:hover{
+				box-shadow: inset 0 0 0 1px #fff;
+			}
+		}
 	}
 
 	.whatson_hover_content {
+		@include transition(height 0.5s ease);
+	    
+		height: 0px;
+
 		background: rgba(0,0,0,0.5);
 		color: white;
 		display: table;
-		height: 189px;
 		left: 15px;
 		position: absolute;
-		top: 0;
+		
 		width: 360px;
-		opacity: 0;
+		opacity: 1;
 		overflow: hidden;
+		// top: 0;
+		bottom: 60px;
 	}
-	
-
 }
 
 // Slick outline

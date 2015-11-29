@@ -24,6 +24,7 @@ $screen-md-max: ($screen-lg-min - 1);
 /* This section needs to be finished */
 $font-fu-l: "futura_lightregular";
 $font-fu-book: "futura_bkbook";
+$font-fu-bold: "futura_bold";
 
 /* Cross browser */
 @mixin transition($transition_string){
@@ -57,7 +58,7 @@ a{cursor: pointer;}
 .full-height{height:100%}
 .full-width{width:100%}
 .half-width{width:50%}
-
+.center{margin:0 auto}
 /* Button */
 .button {
     padding: 12px 30px 12px 30px;
@@ -75,6 +76,6 @@ a{cursor: pointer;}
 /* End of global */
 body
 {
-    overflow-y: scroll !important;
+    overflow-y: scroll !important; 
     overflow-x: hidden !important;
 }
