@@ -62,8 +62,14 @@ a{cursor: pointer;}
 .button {
     padding: 12px 30px 12px 30px;
     font-weight: bold;
-    border: 2px solid;
     color: white;
+}
+
+.button-white {
+    padding: 12px 30px 12px 30px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
 /* End of global */
