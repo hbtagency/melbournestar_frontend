@@ -1,0 +1,28 @@
+@media (max-width: $screen-xxxxs-max) {
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    }                                                   
+}
+@media (min-width:$screen-xxxs-min) and (max-width:$screen-xxxs-max){
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    }  
+}
+@media (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
+    .mobile-nav{
+        .cart-menus{
+            width:80px;
+        }                                                       
+    } 
+}
+@media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
+    .mobile-nav{
+        .cart-menus{   
+            width:100px;   
+        }                                                       
+    }
+}

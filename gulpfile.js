@@ -18,9 +18,11 @@ gulp.task('default', function() {
   watch('css/project/style.scss', batch(function (events, done) {
         gulp.start('sass', done);
     }));
-  watch('css/project/components/*.scss', batch(function (events, done) {
+  watch(['css/project/components/*.scss', 'css/project/components/**/*.scss'], batch(function (events, done) {
         gulp.start('sass', done);
     }));
+    
+
   watch('css/cache/sassOutput/*.css', batch(function (events, done) {
         gulp.start('concat', done);
     }));

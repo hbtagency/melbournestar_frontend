@@ -7197,6 +7197,30 @@ button span {
   transform: rotate3d(0, 0, 1, -45deg);
 }
 
+@media (max-width: 319px) {
+  .mobile-nav .cart-menus {
+    width: 80px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 379px) {
+  .mobile-nav .cart-menus {
+    width: 80px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 519px) {
+  .mobile-nav .cart-menus {
+    width: 80px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+  .mobile-nav .cart-menus {
+    width: 100px;
+  }
+}
+
 .featured-home {
   margin-top: 0px;
   position: relative;
