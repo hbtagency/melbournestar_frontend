@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 .top_nav{
-    .container{
+    .full-screen-container{
         .language{
             margin-right:15px;
             font-size:13px;
@@ -14,8 +14,11 @@ and open the template in the editor.
                     a{
                         padding:0 !important;
                         height:25px;
+                        color:#000;
+                        @include transition(all 0.4s ease);
                         &:hover{
                             background-color:#fff;
+                            color:gainsboro;
                         }
                         &:focus{
                             background-color:#fff;

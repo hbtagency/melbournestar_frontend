@@ -18,9 +18,78 @@
 
     <body>
         <header>
+            <div class="box-container clearfix" id="box-container">
+                <div class="left-bar box-sidebar pull-left" id="left-bar">
+                    <!-- Mobile Menu Component -->
+                      <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left">
+                        <span class="lines"></span>
+                      </button>
+                    
+                      <div class="accordion" id="leftMenu">
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Layout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th-list"></i> UI Components
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                <i class="icon-list-alt"></i> Forms 
+                            </a>
+                        </div>
+                        
+                        <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href='#'>This is one</a></li>
+                                    <li><a href='#'>This is two</a></li>
+                                    <li><a href='#'>This is three</a></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-cog"></i> Plugins
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-file"></i> Templates
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                        
+                    <!-- End of Mobile Menu Component -->
+                   
+                    <!--
+                    <button type="button" class="navbar-toggle collapsed pull-right lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    -->
+                    <!--<a class="view-more-text">More</a>-->
+                </div>
+                <div class="box-center-container clearfix right-side">
             <!-- Top Nav --> 
             <div class="top_nav">
-                <div class="container">
+                <div class="full-screen-container">
                     <!-- Search component --> 
                     <div class="search inline-block">
                         <ul class="nav">
@@ -87,13 +156,18 @@
             <!-- End of Top Nav -->
             <!-- Main Nav -->
             <div class="main_nav">
-                <div class="container">
+                <div class="full-screen-container">
                     <!-- logo -->
                     <div class="logo inline-block left">
                         <span class="logo_span"></span>
                     </div>
+                                        <!-- ticket -->
+                    <div class="buy_tickets inline-block right">
+                        <span class="uppercase">Buy Ticket</span>
+                        <!-- Put buy ticket div in here but use absolute position -->
+                    </div>
                     <!-- main navbar -->
-                    <nav class="navbar inline-block left">
+                    <nav class="navbar inline-block pull-right">
                         <ul class="nav navbar-nav level-1">
                             <li class="root">
                                 <!-- Link tag only if link is present in backend -->
@@ -108,7 +182,7 @@
                                 <!-- Link tag only if link is present in backend -->
                                 <a class="dropdown-toggle menu--link" href="#">
                                     <!-- END IF -->
-                                    <span class="menu--link-text current-parent">Text</span>
+                                    <span class="menu--link-text current-parent">Text Text Text Text Text</span>
                                     <!-- Control to use: -->
                                     <i class="icon menu--icon "></i>
                                 </a>
@@ -141,7 +215,7 @@
                                 <ul class="dropdown-menu level-2">
                                     <li class="">
                                         <a class="" href="#">
-                                            <span class="">Text</span>
+                                            <span class="">Long text  Text Text Text Text</span>
                                         </a>
                                     </li>
                                     <li class="">
@@ -153,64 +227,65 @@
                             </li>
                         </ul>
                     </nav>
-                    <!-- ticket -->
-                    <div class="buy_tickets inline-block right">
-                        <span class="uppercase">Buy Ticket</span>
-                        <!-- Put buy ticket div in here but use absolute position -->
-                    </div>
+
                 </div>
             </div>
             <!-- End of Main Nav -->
-        </header>  
-        <div class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;">
-            <div class="banner-text">
-                <h1>
-                    IT'S MORE THAN A VIEW.
-                    IT'S AN EXPRIENCE.
-                </h1>
-                <a href='#' class="button button-white">
-                    BOOK NOW
-                </a>
-            </div>   
-            <div class="floating-star">
-                <img src ='img/star.png'/>
-            </div>
-        </div>
-        <!-- End of Featured-home -->
-        <div class="featured_home_info">
-            <div class="container">
-                <div class="col-md-4 infomation">
-                    <div>
-                        <img class="nav_icon" src ='img/nav-icon.jpg'/>
-                        GETTING HERE
-                    </div>
-                    <div class="info_content">
-                         101 Waterfront way, Docklands, VIC 3008, Melbourne
-                    </div>
+            <!-- Featured home area -->
+            <div id="featured_area" class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:110% auto;background-position:center center;">
+                <div class="banner-text">
+                    <h1>
+                        IT'S MORE THAN A VIEW.
+                        IT'S AN EXPRIENCE.
+                    </h1>
+                    <a href='#' class="button button-white">
+                        BOOK NOW
+                    </a>
+                </div>   
+                <div class="floating-star">
+                    <img src ='img/star.png'/>
                 </div>
-                <div class="col-md-4 infomation">
-                    <div>
-                        <img class="nav_icon" src ='img/whatson_icon.jpg'/>
-                        WHAT'S ON
-                    </div>
-                    <div class="info_content">
-                        SCHOOL HOLIDAY FUN THIS WINTER
-                    </div>
-                    <img src ='img/arrow.jpg'/>
+            </div>
+            <!-- End of Featured-home -->
+                <div class="featured_home_info">
+                    <div class="full-screen-container">
+                        <div class="col-md-4 infomation">
+                            <div>
+                                <img class="nav_icon" src ='img/nav-icon.jpg'/>
+                                GETTING HERE
+                            </div>
+                            <div class="info_content">
+                                 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                            </div>
+                        </div>
+                        <div class="col-md-4 infomation">
+                            <div>
+                                <img class="nav_icon" src ='img/whatson_icon.jpg'/>
+                                WHAT'S ON
+                            </div>
+                            <div class="info_content">
+                                SCHOOL HOLIDAY FUN THIS WINTER
+                            </div>
+                            <img src ='img/arrow.jpg'/>
 
-                </div>
-                <div class="col-md-4 infomation">
-                    <div>
-                        OPEN TODAY
+                        </div>
+                        <div class="col-md-4 infomation">
+                            <div>
+                                OPEN TODAY
+                            </div>
+                            <div class="info_content">
+                                <img class="nav_icon" src ='img/open_today.jpg'/>
+                                10AM TO 10PM
+                            </div>
+                        </div>
                     </div>
-                    <div class="info_content">
-                        <img class="nav_icon" src ='img/open_today.jpg'/>
-                        10AM TO 10PM
-                    </div>
                 </div>
+            <!-- End of Featured_home_info -->
             </div>
-        </div>
-        <!-- End of Featured_home_info -->
+                <div class="right-bar box-sidebar pull-right"></div>
+            </div>
+        </header>  
+
         <!-- What's On -->
         <div class="whats_on">
             <div class="container">
@@ -378,6 +453,8 @@
         <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
         <script type="text/javascript" src="js/project/carousel.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
+        <script type="text/javascript" src="js/project/transform_view_button.js"></script>
+        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
 
     </body>
 </html>

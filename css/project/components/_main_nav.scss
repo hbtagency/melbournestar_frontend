@@ -2,7 +2,7 @@
     height:95px;
     background-color:$nav_blue;
     text-transform:uppercase;
-    .container{
+    .full-screen-container{
         padding-left:309px;
         padding-right:200px;
         height:95px;
@@ -14,8 +14,8 @@
         }
         .logo{
             width:290px;
-            margin-left:-290px;
-            padding-top:22px;
+            margin-left:-270px;
+            padding-top:23px;
             span.logo_span{
                 width:290px;
                 height:52px;
@@ -24,13 +24,11 @@
             }
         }
         nav.navbar{
-            width:100%;
             margin-bottom:0px;
             border:none;
             ul{
-                width:100%;
                 li.root{
-                    width:19.6%;
+                    min-width:150px;
                     a{
                         height:94px;
                         padding-top:35px;
@@ -44,9 +42,12 @@
                         &:visited{
                             background-color:$head_blue;
                         }
+                        &:active{
+                            background-color:$head_blue;
+                        }
                     }
                     .dropdown-menu{
-                        background-color:$nav_blue;
+                        background-color:rgba(0,0,0,0.6);
                     }
                     .level-2{
                         padding:0;
@@ -69,4 +70,7 @@
         }
     }
 }
-@import "components/__tickets.scss";
+
+
+@import "__tickets.scss";
+@import "__box_container.scss";

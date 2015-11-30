@@ -1,0 +1,43 @@
+$top_nav_height : 33px;
+
+.box-container{
+    @include transition(all 1s ease);
+    .left-bar{
+        margin-left:-55px;
+
+        &.expanded{
+            width:300px;
+            position:absolute;
+            z-index: 100;
+            margin-left:-300px;
+            .lines-button{
+                float:right;
+            }
+            .accordion{
+                margin-top:$top_nav_height;
+            }
+        }
+    }
+    .right-bar{
+        margin-right:-55px;
+    }
+
+    padding:0 55px 0 55px;
+    width:100%;
+    .box-sidebar{
+        width:55px;
+        height:993px;
+        display:block;
+    }
+    .box-center-container{
+        width:100%;
+    }
+    &.right-side{
+        padding-left:300px
+    }
+}
+
+
+
+@import '__more_menu_button.scss';
+

@@ -63,6 +63,7 @@ a{cursor: pointer;}
 .button {
     padding: 12px 30px 12px 30px;
     font-weight: bold;
+    border: 2px solid;
     color: white;
 }
 
@@ -70,12 +71,12 @@ a{cursor: pointer;}
     padding: 12px 30px 12px 30px;
     font-weight: bold;
     border: 2px solid #fff;
-    color: #fff;
+    color: #fff !important;
 }
 
 /* End of global */
 body
 {
-    overflow-y: scroll !important; 
+    overflow-y: scroll !important;
     overflow-x: hidden !important;
 }
