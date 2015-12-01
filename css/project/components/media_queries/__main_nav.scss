@@ -1,28 +1,71 @@
-@media (max-width: $screen-xxxxs-max) {
-    .mobile-nav{
-        .cart-menus{
-            width:80px;
-        }                                                       
-    }                                                   
+
+@media (max-width: $screen-md-max) {    
+    .main_nav {
+        .full-screen-container{
+            padding-left:0;
+            padding-right:0;
+            .logo{
+                right:0;
+                margin-right:90px;
+                padding-top:18px;
+            }
+            
+            .main_nav_item{
+                display:none;
+            }
+            
+            .mobile-menu{
+                
+                        
+                .lines-button{
+                    padding:0 .75rem;
+                }
+            
+                button.navbar-toggle{
+                    display:block;
+                    .icon-bar{
+                        background-color: #294d82;
+                        width:35px;
+                        height:6px;
+                        margin-left:15px;
+                    }
+                }
+            }
+        }        
+    }                                          
 }
-@media (min-width:$screen-xxxs-min) and (max-width:$screen-xxxs-max){
-    .mobile-nav{
-        .cart-menus{
-            width:80px;
-        }                                                       
-    }  
+
+@media (min-width:$screen-lg-min) and (max-width:$screen-lg-max){
+    .main_nav{
+        .full-screen-container{
+            nav.navbar{
+                ul{
+                    li.root{
+                        min-width:90px;
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }      
+        }
+    }
 }
-@media (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
-    .mobile-nav{
-        .cart-menus{
-            width:80px;
-        }                                                       
-    } 
-}
-@media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
-    .mobile-nav{
-        .cart-menus{   
-            width:100px;   
-        }                                                       
-    } 
+
+@media (max-width: $screen-md-max) {    
+    .main_nav{
+        height:65px;
+        .full-screen-container{
+            height:65px;
+            .logo{
+                width:180px;
+                margin-right:60px;
+                span.logo_span{
+                    width:180px;
+                    background-size:cover;
+                    height:30px;
+                }
+            }
+        }
+    }
 }

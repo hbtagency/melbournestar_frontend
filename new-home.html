@@ -20,13 +20,44 @@
         <header>
             <div class="box-container clearfix" id="box-container">
                 <div class="left-bar box-sidebar pull-left" id="left-bar">
-                    <!-- Mobile Menu Component -->
-                      <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
-                        <span class="lines"></span>
-                      </button>
+                    <!-- More Menu Component -->
+                    <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
+                      <span class="lines"></span>
+                    </button>
                     
                     <div class="accordion" id="leftMenu">
-
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Main one
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseMainTwo">
+                                <i class="icon-list-alt"></i> Main two 
+                            </a>
+                        </div>
+                        
+                        <div id="collapseMainTwo" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href='#'>This is one</a></li>
+                                    <li><a href='#'>This is two</a></li>
+                                    <li><a href='#'>This is three</a></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Main three
+                            </a>
+                        </div>
+                    </div>
+                        
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
@@ -89,7 +120,7 @@
                 <div class="box-center-container clearfix right-side">
             <!-- Top Nav --> 
             <div class="top_nav">
-                <div class="full-screen-container">
+                <div class="full-screen-container visible-lg">
                     <!-- Search component --> 
                     <div class="search inline-block">
                         <ul class="nav">
@@ -115,9 +146,9 @@
                         <ul class="nav">
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
-						<img src="img/ausflag.jpg" alt="$alt" class="center block "/>
-                                                <span class="block text">AUS</span>
-                                                <img src="img/arrow_down.jpg" class="center block"/>
+                                    <img src="img/ausflag.jpg" alt="$alt" class="center block "/>
+                                    <span class="block text">AUS</span>
+                                    <img src="img/arrow_down.jpg" class="center block"/>
                               </a>
                               <ul class="dropdown-menu">
                                     <li class="navbar--list-item">
@@ -157,17 +188,32 @@
             <!-- Main Nav -->
             <div class="main_nav">
                 <div class="full-screen-container">
+                    <!-- Mobile Menu Component -->
+                    <div class="mobile-menu hidden-lg">
+                        <!--
+                        <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left pull-right visible-lg">
+                          <span class="lines"></span>
+                        </button>-->
+                        
+                        <button type="button" class="navbar-toggle collapsed pull-left lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
                     <!-- logo -->
-                    <div class="logo inline-block left">
+                    <div class="logo inline-block left" id="logo">
                         <span class="logo_span"></span>
                     </div>
                                         <!-- ticket -->
-                    <div class="buy_tickets inline-block right">
+                    <div class="buy_tickets inline-block right visible-lg">
                         <span class="uppercase">Buy Ticket</span>
                         <!-- Put buy ticket div in here but use absolute position -->
                     </div>
                     <!-- main navbar -->
-                    <nav class="navbar inline-block pull-right">
+                    <nav class="navbar inline-block pull-right visible-lg" id="main_nav">
                         <ul class="nav navbar-nav level-1">
                             <li class="root">
                                 <!-- Link tag only if link is present in backend -->
@@ -243,13 +289,13 @@
                     </a>
                 </div>   
                 <div class="floating-star">
-                    <img src ='img/star.png'/>
+                    <img class="img-responsive" src ='img/star.png'/>
                 </div>
             </div>
             <!-- End of Featured-home -->
                 <div class="featured_home_info">
                     <div class="full-screen-container">
-                        <div class="col-md-4 infomation">
+                        <div class="col-sm-4 infomation">
                             <div>
                                 <img class="nav_icon" src ='img/nav-icon.jpg'/>
                                 GETTING HERE
@@ -258,7 +304,7 @@
                                  101 Waterfront way, Docklands, VIC 3008, Melbourne
                             </div>
                         </div>
-                        <div class="col-md-4 infomation">
+                        <div class="col-sm-4 infomation hidden-xs">
                             <div>
                                 <img class="nav_icon" src ='img/whatson_icon.jpg'/>
                                 WHAT'S ON
@@ -269,12 +315,12 @@
                             <img src ='img/arrow.jpg'/>
 
                         </div>
-                        <div class="col-md-4 infomation">
+                        <div class="col-sm-4 infomation hidden-xs">
                             <div>
                                 OPEN TODAY
                             </div>
                             <div class="info_content">
-                                <img class="nav_icon" src ='img/open_today.jpg'/>
+                                <img class="nav_icon hidden-sm" src ='img/open_today.jpg'/>
                                 10AM TO 10PM
                             </div>
                         </div>

@@ -3,7 +3,6 @@
     background-color:$nav_blue;
     text-transform:uppercase;
     .full-screen-container{
-        padding-left:309px;
         padding-right:200px;
         height:95px;
         .left{
@@ -13,9 +12,10 @@
             float:right;
         }
         .logo{
+            position:absolute;
             width:290px;
-            margin-left:-270px;
             padding-top:23px;
+            padding-left:30px;
             span.logo_span{
                 width:290px;
                 height:52px;
@@ -26,7 +26,9 @@
         nav.navbar{
             margin-bottom:0px;
             border:none;
-            ul{
+
+            ul
+                
                 li.root{
                     min-width:150px;
                     a{
@@ -46,8 +48,11 @@
                             background-color:$head_blue;
                         }
                     }
+                    
+
                     .dropdown-menu{
                         background-color:rgba(0,0,0,0.6);
+                        
                     }
                     .level-2{
                         padding:0;
@@ -59,6 +64,10 @@
                         }
                     }
                 }
+                
+                .dropdown:hover .dropdown-menu{
+                    display:block !important;
+                }
             }
         }
         
@@ -68,11 +77,10 @@
         .dropdown-menu li a:hover{
             background: black !important;
         }
-    }
 }
 
 
 
-@import "__tickets.scss";
-@import "__box_container.scss"; 
+@import "sub_components/__tickets.scss";
+@import "sub_components/__box_container.scss"; 
 @import "media_queries/__main_nav.scss";

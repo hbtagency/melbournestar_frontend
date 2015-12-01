@@ -1,0 +1,113 @@
+
+@media (min-width:$screen-lg-min) and (max-width: $screen-lg-max) {
+    .featured-home{
+        height:454px;
+        .floating-star{
+            width:300px;
+        }
+    }                                            
+}
+
+@media (min-width:$screen-md-min) and (max-width:$screen-md-max){
+    .featured-home{
+        height:354px;
+        .floating-star{
+            width:250px;
+        }
+        
+        .banner-text{
+            margin-top:50px;
+        }
+        .button{
+            display:none;
+        }
+    } 
+}
+
+@media (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
+    .featured-home{
+        height:254px;
+        .floating-star{
+            width:150px;
+            left:-50px;
+            bottom:-50px;
+        }
+        .banner-text{
+            margin-top:40px;
+        }
+        .button{
+            display:none;
+        }
+    } 
+}
+@media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
+    .featured-home{
+        height:254px;
+        background-size:150% !important;
+        .floating-star{
+            width:150px;
+            left:-50px;
+            bottom:-50px;
+        }
+        
+        .banner-text{
+            margin-top:90px;
+            position:absolute;
+            left:0;
+            right:0;
+        }
+        .button{
+            display:none;
+        }
+    } 
+}
+
+@media  (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
+    .featured-home{
+        height:200px;
+        background-size:150% !important;
+        .floating-star{
+            width:100px;
+            left:-30px;
+            bottom:-30px;
+        }
+        .banner-text{
+            width:300px;
+            margin-top:80px;
+            position:absolute;
+            left:0;
+            right:0;
+            h1{
+                font-size:24px;
+            }
+        }
+        .button{
+            display:none;
+        }
+    } 
+}
+@media  (max-width:$screen-xxxs-max){
+    .featured-home{
+        height:160px;
+        background-size:150% !important;
+        .floating-star{
+            width:100px;
+            left:-30px;
+            bottom:-30px;
+        }
+        .banner-text{
+            width:270px;
+            margin-top:40px;
+            position:absolute;
+            left:-10px;
+            right:0;
+            h1{
+                font-size:22px;
+            }
+        }
+        .button{
+            display:none;
+        }
+    } 
+}
+

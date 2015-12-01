@@ -20,7 +20,6 @@ $("#featured_area").mousemove(function(e){
           }else{
             $('#featured_area').css("background-position-x", newvalueX+"px");
           }
-              console.log(first_hit);
 
 });
 });

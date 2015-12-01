@@ -31,5 +31,7 @@
     }
 }
 
-@import '__language.scss';
-@import '__search.scss';
+@import 'sub_components/__language.scss';
+@import 'sub_components/__search.scss';
+@import 'media_queries/__top_nav.scss';
+
