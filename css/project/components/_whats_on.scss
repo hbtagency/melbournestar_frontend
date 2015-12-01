@@ -27,7 +27,7 @@
 		&:hover{
 			span.whatson_hover_content{
 				opacity: 1;
-				height: 189px;	
+				height: 188px;	
 			}
 			.whatson_view_button{
 				display: block;
@@ -37,10 +37,10 @@
 
 	.image_wrapper{
 		height: 188px;
-	}
 
-	.whatson_carousel_img{
-		max-width: 100%;
+		img{
+			margin: 0 auto;
+		}
 	}
 
 	.whatson_carousel_textarea{
@@ -95,7 +95,7 @@
 		opacity: 1;
 		overflow: hidden;
 		// top: 0;
-		bottom: 60px;
+		bottom: 62px;
 	}
 }
 
@@ -103,3 +103,5 @@
 .slick-initialized .slick-slide{
 	outline: none;
 }
+
+@import "media_queries/__whats_on.scss";
