@@ -15,10 +15,12 @@ $("#featured_area").mousemove(function(e){
 
                 var xPos = backgroundPos[0];
                 moveBackground(xPos,newvalueX,$("#featured_area"));
-                //$('#featured_area').css("background-position-x", newvalueX+"px");
+                //$('#featured_area').css("background-position-y", newvalueY+"px");
                 first_hit = false;
           }else{
             $('#featured_area').css("background-position-x", newvalueX+"px");
+            //$('#featured_area').css("background-position-y", newvalueY+"px");
+
           }
 
 });

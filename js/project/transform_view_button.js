@@ -1,4 +1,5 @@
-    var anchor = document.querySelectorAll('button');
+    //var anchor = document.querySelectorAll('button');
+    var anchor = $('#view_more_button');
     
     [].forEach.call(anchor, function(anchor){
       var open = false;
@@ -27,4 +28,4 @@
           open = false;
         }
       }
-    }); 
+}); 
