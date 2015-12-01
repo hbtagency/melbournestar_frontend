@@ -10,7 +10,7 @@ gulp.task('default', function() {
   browserSync.init({
         
         //change proxy server to your localhost
-        proxy: "http://localhost:3000/melStar/home.html",
+        proxy: "http://localhost:80/melStar/melbournestar_frontend/new-home.html",
     });
 
   gulp.start('sass');
