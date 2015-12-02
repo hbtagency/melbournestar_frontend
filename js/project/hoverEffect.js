@@ -1,6 +1,14 @@
 var width = window.innerWidth;
 
 if(width < 992){
+	//Add overlay for whatsnew
+	$('.whatsnew_carousel_textarea').addClass('centered');
+
+	//Update what's new overlay height
+	var img_height = $('.whatsnew_carousel_img').height();
+	$('.whatsnew_hover_content').css('height',img_height);
+
+	$('.whatsnew_content').css('height',img_height+30);
 	
 }
 else{
@@ -19,19 +27,20 @@ else{
 		}else{
 		}
 	});
+
+	// Whats New
+	$(".whatsnew_content").hover(function(){
+
+		if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
+		}else{
+			$(this).children('.whatsnew_carousel_textarea').first().addClass('centered');
+		}
+	});
+
+	$(".whatsnew_content").mouseleave(function(){
+		if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
+			$(this).children('.whatsnew_carousel_textarea').first().removeClass('centered');
+		}else{
+		}
+	});
 }
-// Whats New
-$(".whatsnew_content").hover(function(){
-
-	if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
-	}else{
-		$(this).children('.whatsnew_carousel_textarea').first().addClass('centered');
-	}
-});
-
-$(".whatsnew_content").mouseleave(function(){
-	if($(this).children('.whatsnew_carousel_textarea').first().hasClass('centered')){
-		$(this).children('.whatsnew_carousel_textarea').first().removeClass('centered');
-	}else{
-	}
-});

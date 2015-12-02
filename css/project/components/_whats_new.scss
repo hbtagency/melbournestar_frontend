@@ -1,6 +1,8 @@
 .whats_new{
 	margin-top: 20px;
 	text-align: center;
+	padding-bottom: 30px;
+
 	.whats_news_title{
 		color: white;
 		padding-top: 50px;
@@ -17,7 +19,7 @@
 
 		&:hover{
 			span.whatsnew_hover_content{
-				height: 189px;	
+				height: 190px;	
 			}
 			.whatsnew_play_button{
 				display: block;
@@ -78,8 +80,15 @@
 		position: absolute;
 		width: 360px;
 		overflow: hidden;
-		bottom: 61px;
+		bottom: 60px;
 	}
+}
+
+.slick-next-white{
+    top: 40% !important;
+}
+.slick-prev-white{
+    top: 40% !important;
 }
 
 @import "media_queries/__whats_new.scss";
