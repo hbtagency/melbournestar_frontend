@@ -31,6 +31,16 @@
     	.whatsnew_carousel_img{
     		width: 100%;
 		}
+
+		.whatsnew_carousel_textarea{
+			.whatsnew_carousel_title{
+			    font-size: 13px;
+			}
+
+			.whatsnew_carousel_content{
+			    font-size: 11px;
+			}
+		}
     }
 
     .slick-next-white{
@@ -62,7 +72,7 @@
 				display: block;
 			}
 			.whatsnew_hover_content {
-	            width: 475px;
+	            width: 476px;
 	            top: 0px;
 	        }
 	        &:hover{
@@ -101,7 +111,7 @@
 				display: block;
 			}
 			.whatsnew_hover_content {
-	            width: 345px;
+	            width: 346px;
 	            top: 0;
 	        }
 	        &:hover{
@@ -137,6 +147,7 @@
 
 	    .whats_news_image_wrapper{
 	        height: 154px !important;
+	        width: 294px;
 	    } 
 
 	    .whatsnew_carousel_textarea{
@@ -151,6 +162,7 @@
 
 	    .whatsnew_carousel_img{
 	    	height: 154px;
+	    	width: 100%;
 	    }
 	}
 }

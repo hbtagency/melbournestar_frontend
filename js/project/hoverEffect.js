@@ -5,9 +5,10 @@ if(width < 992){
 	$('.whatsnew_carousel_textarea').addClass('centered');
 
 	//Update what's new overlay height
-	var img_height = $('.whatsnew_carousel_img').height();
+	var img_height = $('.whatsnew_carousel_img').height() + 1;
+	var img_width = $('.whatsnew_carousel_img').width() + 1;
 	$('.whatsnew_hover_content').css('height',img_height);
-
+	$('.whatsnew_hover_content').css('width',img_width);
 	$('.whatsnew_content').css('height',img_height+30);
 	
 }
