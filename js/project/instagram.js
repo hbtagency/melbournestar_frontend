@@ -1,3 +1,16 @@
+var win_width = window.innerWidth;
+var numberOfFeed = 8;
+
+if(win_width < 1458){
+    var diff = 1458 - win_width;
+    var numOfNonShowing = Math.floor(diff/132);
+    numberOfFeed -= numOfNonShowing;
+    console.log("width" + win_width + " diff:" + diff + " mod" + numOfNonShowing + "limit" + numberOfFeed);
+
+    if(win_width < 825){
+        numberOfFeed = 4;
+    }
+}
 var u_id = parseInt('506128982')
     var feed = new Instafeed({
         //get: 'tagged',
@@ -8,6 +21,6 @@ var u_id = parseInt('506128982')
         userId: u_id,
         accessToken: '506128982.e5f9f03.a9ac8cbc214d4e8a9cea4ea805db52ff',
         sortBy: 'most-recent',
-        limit: 8
+        limit: numberOfFeed
     });
     feed.run();
