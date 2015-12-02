@@ -38,7 +38,15 @@ $font-fu-bold: "futura_bold";
     transition: $transition_string;
 }
 
+
+/* Mobile box edge */
+$mobile_edge:15px;
+$top_nav_height : 33px;
+$mobile-menu-width:200px;
+
 /***Global effects*/
+
+
 body{font-family: $font-fu-l}
 .transparent-bg{
     background-color:rgba(0, 0, 0, 0.4);
@@ -83,4 +91,9 @@ body
 {
     overflow-y: scroll !important;
     overflow-x: hidden !important;
+    @include transition(all 0.4s ease);
+}
+
+#box-container.move-left{
+    margin-left:$mobile-menu-width;
 }

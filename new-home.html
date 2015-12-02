@@ -18,14 +18,13 @@
 
     <body>
         <header>
-            <div class="box-container clearfix" id="box-container">
-                <div class="left-bar box-sidebar pull-left" id="left-bar">
-                    <!-- More Menu Component -->
-                    <button type="button" role="button" id="view_more_button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
-                        <span class="lines"></span>
-                    </button>
-                    
-                    <div class="accordion" id="leftMenu">
+            <div id="body-mask" class="body-mask">
+                
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu-sidebar hidden-lg clearfix" id="leftMobileMenu">
+                <div class="accordion">
                     <div class="accordion-group hidden-lg">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
@@ -34,7 +33,7 @@
                         </div>
                     </div>
                     <div class="accordion-group hidden-lg">
-                        <div class="accordion-heading">
+                        <div class="accordion-heading collapsed_item">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseMainTwo">
                                 <i class="icon-list-alt"></i> Main two 
                             </a>
@@ -73,7 +72,64 @@
                         </div>
                     </div>
                     <div class="accordion-group">
+                        <div class="accordion-heading collapsed_item">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#cf">
+                                <i class="icon-list-alt"></i> Forms 
+                            </a>
+                        </div>
+                        
+                        <div id="cf" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href='#'>This is one</a></li>
+                                    <li><a href='#'>This is two</a></li>
+                                    <li><a href='#'>This is three</a></li>
+                                </ul>                 
+                            </div>
+                         </div>
+                    </div>
+                    <div class="accordion-group">
                         <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-cog"></i> Plugins
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-file"></i> Templates
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box-container clearfix" id="box-container">
+                <div class="left-bar box-sidebar pull-left" id="left-bar">
+                    <!-- More Menu Component -->
+                    <button type="button" role="button" id="view_more_button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
+                        <span class="lines"></span>
+                    </button>
+                    
+                    <div class="accordion" id="leftMenu">
+              
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Layout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th-list"></i> UI Components
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading collapsed_item">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
                                 <i class="icon-list-alt"></i> Forms 
                             </a>
@@ -278,7 +334,7 @@
             </div>
             <!-- End of Main Nav -->
             <!-- Featured home area -->
-            <div id="featured_area" class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:110% auto;background-position:center center;">
+            <div id="featured_area" class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:cover;background-position:center center;">
                 <div class="banner-text">
                     <h1>
                         IT'S MORE THAN A VIEW.
@@ -505,6 +561,7 @@
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
         <script type="text/javascript" src="js/project/transform_view_button.js"></script>
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
+        <script type="text/javascript" src="js/project/global/full_height_menu.js"></script>
 
     </body>
 </html>

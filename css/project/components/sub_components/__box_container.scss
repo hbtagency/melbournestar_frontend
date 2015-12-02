@@ -1,5 +1,3 @@
-$top_nav_height : 33px;
-
 .box-container{
     @include transition(all 1s ease);
     .left-bar{
@@ -38,15 +36,17 @@ $top_nav_height : 33px;
     }
 }
 
-@import '__more_menu_button.scss';
+@import '__more_menu.scss';
 
 @media (max-width: $screen-md-max) {
-    
     .box-container{
-        padding:0 15px 0 15px;
+        padding:0 $mobile_edge 0 $mobile_edge;
+        .top_nav{
+            height:$mobile_edge;
+        }
         .left-bar{
             width:150px;
-            margin-left:-15px;
+            margin-left:-$mobile_edge;
         }
         .left-bar.expanded{
             width:150px;
@@ -62,13 +62,12 @@ $top_nav_height : 33px;
                 }
                 
             }
-            
         }
         .right-bar{
-            margin-right:-15px;
+            margin-right:-$mobile_edge;
         }
         .box-sidebar{
-            width:15px;
+            width:$mobile_edge;
         }
     }
     .box-container.right-side{
@@ -79,11 +78,3 @@ $top_nav_height : 33px;
     }                                            
 }
 
-@media (max-width: $screen-md-max) {
-    .box-container{
-        padding:0 5px 0 5px;
-        .top_nav{
-            height:5px;
-        }
-    }
-}
