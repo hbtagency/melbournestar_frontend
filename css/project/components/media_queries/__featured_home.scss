@@ -110,4 +110,11 @@
         }
     } 
 }
+@media  (min-width:$screen-lg-min){
+    .featured-home{
+        .banner-text{
+            height:auto;
+        }
+    } 
+}
 

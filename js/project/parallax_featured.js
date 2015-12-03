@@ -14,7 +14,7 @@ $(document).ready(function() {
             //var newvalueY = height * pageY * -1 - 50;
             //$(this).css("background-size","110% auto");
             if(first_hit){
-                zoom($(this),100,110);
+                zoom($(this),100,105);
                 first_hit = false;
             }else{
                 if(animation_completed){
@@ -26,7 +26,7 @@ $(document).ready(function() {
     });
     $("#featured_area").mouseleave(function(e){
         first_hit = true;
-        zoom($(this),110,100);
+        zoom($(this),105,100);
         animation_completed = false;
         $(this).css("background-position","center center");
     });

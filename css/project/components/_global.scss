@@ -38,6 +38,13 @@ $font-fu-bold: "futura_bold";
     transition: $transition_string;
 }
 
+@mixin text_shadow($param1,$param2,$color){
+    text-shadow: $param1 $param2 1px $color;
+    -webkit-shadow: $param1 $param2 1px  $color;
+    -o-shadow: $param1 $param2 1px $color;
+    -moz-shadow: $param1 $param2 1px $color;
+}
+
 
 /* Mobile box edge */
 $mobile_edge:15px;
@@ -74,14 +81,17 @@ a{cursor: pointer;}
 /* Button */
 .button {
     padding: 12px 30px 12px 30px;
-    font-weight: bold;
-    border: 2px solid;
-    color: white;
+    border: 2px solid #fff;
+    @include transition(all 0.3s ease);
+    &:hover{
+        text-decoration: none;
+        box-shadow: inset 0 0 0 2px white;
+    }
 }
 
+
+
 .button-white {
-    padding: 12px 30px 12px 30px;
-    font-weight: bold;
     border: 2px solid #fff;
     color: #fff !important;
 }
