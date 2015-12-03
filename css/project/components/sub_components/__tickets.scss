@@ -1,7 +1,10 @@
+$ticket_container_width:175px;
+$book_button_height:35px;
 .main_nav{
     .full-screen-container{
+        position:relative;
         .buy_tickets{
-            width:175px;
+            width:$ticket_container_width;
             margin-right:-200px;
             background-color:$green;
             height:95px;
@@ -14,5 +17,30 @@
                 color:#fff;
             }
         }
+        .book-ticket-button{
+            background-color:$nav_blue;
+            width:$ticket_container_width;
+            height:$book_button_height;
+            right:0;
+            bottom:-$book_button_height;
+            position:absolute;
+            z-index:10;
+            color:#fff;
+            padding:8px 0 6px 10px;
+            text-align: left;
+            background-color:$nav_blue;
+            &:hover{
+                text-decoration: none;
+            }
+            #rotate{
+                width:15px;
+                height:15px;
+                float:right;
+                margin:2px 5px 0 0;
+                border:none;
+            }
+        }
     }
 }
+
+@import "__rotate_element.scss";

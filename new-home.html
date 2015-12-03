@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="en"> 
     <head>
-        <!-- Meta, title, CSS, favicons, etc. -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Official Melbourne Star Observation Wheel Website. Book your tickets online and experience one of the world's largest observation wheels.">
+        <meta name="keywords" content="melbournestar, melbourne star, observation wheel, ferris wheel, tourism, tourist attaction, melbourne tourism, australia tourism, dockland tourism ">
+        <meta name="author" content="HBT">
         <title> Home | Melbourne Star </title> 
-        <!-- Title of the page | Site name from Global Settings -->
         <link rel="stylesheet" href="css/final/style.css"/>
+        
+        <!-- JS init -->
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
-
     </head>
 
     <body>
@@ -269,6 +268,10 @@
                     <div class="buy_tickets inline-block right visible-lg">
                         <span class="uppercase">Buy Ticket</span>
                         <!-- Put buy ticket div in here but use absolute position -->
+                        <a class="book-ticket-button" id="book-ticket-button"/>
+                           BOOK YOUR TICKETS 
+                           <img id="rotate" class="img-responsive" src="img/plus.png"/>
+                        </a>
                     </div>
                     <!-- main navbar -->
                     <nav class="navbar inline-block pull-right visible-lg" id="main_nav">
@@ -566,17 +569,22 @@
         <footer>
         </footer>
 
-        <!-- carousel plugin -->
+        <!-- Js used only in home page -->
         <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
         <script type="text/javascript" src="js/project/carousel.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
+        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
+
         <!-- instafeed -->
         <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
         <script type="text/javascript" src="js/project/instagram.js"></script>
-        <script type="text/javascript" src="js/project/transform_view_button.js"></script>
-        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="js/project/global/full_height_menu.js"></script>
-        <script type="text/javascript" src="js/project/global/body_mask.js"></script>
+        
+        <!-- The following js files has been used site widely -->
+        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
+
 
     </body>
 </html>
