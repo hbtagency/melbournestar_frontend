@@ -243,7 +243,7 @@
                     </div>
                     <!-- End of Top Nav -->
                     <!-- Main Nav -->
-                    <div class="main_nav clearfix" id="main_navigation">
+                    <div class="main_nav">
                         <div class="full-screen-container">
                             <!-- Mobile Menu Component -->
                             <div class="mobile-menu hidden-lg">
@@ -468,7 +468,7 @@
                                         <!-- Link tag only if link is present in backend -->
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <span class="menu--link-text current-parent">Dropdown</span>
-                                            <span class="arrow_down"></span>
+                                            <span class="caret"></span>
                                         </a>
                                         <!-- Second level Nav Item -->
                                         <ul class="dropdown-menu level-2">
@@ -507,7 +507,7 @@
                         </div>
                     </div>
                     <!-- End of Featured-home -->
-                    <div class="featured_home_info" id="featured_home_info">
+                    <div class="featured_home_info">
                         <div class="full-screen-container">
                             <div class="col-sm-4 infomation">
                                 <div>
@@ -527,9 +527,8 @@
                                 <div class="info_content">
                                     SCHOOL HOLIDAY FUN THIS WINTER
                                 </div>
-                                <a id="bouncing_arrow" class="clearfix bounce" href="#">
-                                    <img src ='img/arrow.jpg'/>
-                                </a>
+                                <img src ='img/arrow.jpg'/>
+
                             </div>
                             <div class="col-sm-4 infomation hidden-xs">
                                 <div>
@@ -757,8 +756,85 @@
         <footer>
             <div class="container">
                 <div class="lets_connect row">
+                    <div class="footer_title">
+                        LET'S CONNECT
+                    </div>
+                    <div class="social_links">
+                        <span><a href="#"><img src="img/tripadvisor_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/instagram_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/youtube_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/facebook_icon.jpg" /></a></span>
+                    </div>
                 </div>
-                <div class="footer_wrapper">
+                <div class="footer_wrapper row">
+                    <div class="col-md-4">
+                        <div class="footer_title">
+                            GETTING HERE
+                        </div>
+                        <div class="address">
+                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                        </div>
+                        <div class="footer_title">
+                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_title">
+                            INSTAGRAM
+                        </div>
+                        <div id="instafeed2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer_title">
+                            QUICK LINKS
+                        </div>
+                        <div class="footer_links">
+                            <div><a>Plan Your Visit</a></div>
+                            <div><a>Pricing &amp; Ticketing</a></div>
+                            <div><a>Buy Tickets</a></div>
+                            <div><a>Functions &amp; Events</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer_bottom pull-left inline-block">
+                        &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
+                    </div>
+                    <div class="pull-right inline-block visible-lg">
+                        <ul class="footer_bottom_links">
+                            <li class="root inline-block">
+                                <a href="#" class="inline-block " >
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Disclaimer
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    about us
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Sitemap
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -770,14 +846,12 @@
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
         <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js">
         </script>
-        <script type="text/javascript">
-            $( function() {
-                $( '#cd-dropdown' ).dropdown();
-            });
-        </script>
+        <script type="text/javascript" src="js/project/custom_dropdown.js">        </script>
         <!-- instafeed -->
         <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
         <script type="text/javascript" src="js/project/instagram.js"></script>
+        <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"></script>
+        <script type="text/javascript" src="js/project/instagram2.js"></script>
 
         <!-- The following js files has been used site widely -->
         <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
@@ -785,8 +859,6 @@
         <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
         <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
         <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
-        <script type="text/javascript" src="js/project/scroll_to_whatson.js"></script>
 
     </body>
 </html>

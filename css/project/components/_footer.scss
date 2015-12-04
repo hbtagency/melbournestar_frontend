@@ -1,14 +1,71 @@
+$footer_bottom_font_size: 13px;
+
+.footer_title{
+	font-size: 20px;
+	font-family: $font-fu-book;
+	margin-bottom: 10px;
+}
+
 .lets_connect{
-
-	.lets_connect_title{
-
-	}
+	margin-top: 50px;
+	text-align: center;
 
 	.social_links{
-		
+		float: center;
+		position: relative;
+		right: 20px;
+		margin-bottom: 50px;
+
+		span{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
 	}
 }
 
 .footer_wrapper{
+	background-color: $gray_background;
+	padding:50px 20px 50px 20px;
 
+	.address{
+		font-family: $font-fu-book;
+		margin-bottom: 10px;
+	}
+
+	#instafeed2{
+		a{
+			img{
+				width: 21%;
+			}
+		}
+	}
+
+	.footer_links div{ 
+		margin-bottom: 5px;
+
+		a{
+			font-family: $font-fu-book;
+			color: black;
+		}
+	}
+}
+
+.footer_bottom{
+	font-size: $footer_bottom_font_size;	
+}
+
+.footer_bottom_links{
+	display: inline-block;
+
+	li{
+		float: left;
+		list-style: none;
+		margin-left: 15px;
+
+		a{
+			font-size: $footer_bottom_font_size;
+			color: black;
+			text-transform: uppercase;
+		}
+	} 
 }
