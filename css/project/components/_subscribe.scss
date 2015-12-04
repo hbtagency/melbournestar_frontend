@@ -6,6 +6,8 @@ $join_button_width: 80px;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	margin-bottom: 400px;
+
 
 	.subscribe_form{
 		padding-left: $interest_width + 40;
@@ -21,7 +23,7 @@ $join_button_width: 80px;
 	}
 
 	.interst{
-		margin-left: -($interest_width+5);
+		margin-left: -166px;
 		width: $interest_width;
 		float: left;
 
@@ -34,26 +36,28 @@ $join_button_width: 80px;
 	}
 
 	.fluid_container {
-		width: 99%;
-		text-align: center;
+		width: 95%;
+		float: center;
+		position: relative;
+		left: 11px;
 
 		input.inline-block{
 			width: 30%;
-			margin-right: 5px;
+			margin-right: 15px;
 			border: 0px;
-			height: 30px;
-			padding-left: 10px;
+			height: 60px;
+			padding-left: 26px;
 		}
 
 	}
 
 	.join_button{
 		margin-right: -$join_button_width;
-		padding-top: 5px;
-		width: $join_button_width;
+		padding-top: 20px;
+		width: $join_button_width + 40;
 		float: right;
 		background-color: black;	
-		height: 30px;
+		height: 60px;
 
 		a{
 			color: white;

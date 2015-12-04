@@ -13,6 +13,8 @@
         <!-- JS init -->
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
+
     </head>
 
     <body>
@@ -728,9 +730,16 @@
             </div>
             <div class="row subscribe_form">
                 <div class="interst inline-block">
-                    <select>
+                    <!-- <select>
                         <option value="interests">INTERESTS</option>
                         <option value="test">TEST</option>
+                    </select> -->
+                    <select id="cd-dropdown" class="cd-select">
+                        <option value="-1" selected>INTERESTS</option>
+                        <option value="1" >SPORT</option>
+                        <option value="2" >GAME</option>
+                        <option value="3" >TV</option>
+                        <option value="4" >OTHERS</option>
                     </select>
                 </div>
                 <div class="fluid_container inline-block">
@@ -745,9 +754,13 @@
             </div>
         </div>
         <!-- End of Subscribe -->
-
-
         <footer>
+            <div class="container">
+                <div class="lets_connect row">
+                </div>
+                <div class="footer_wrapper">
+                </div>
+            </div>
         </footer>
 
         <!-- Js used only in home page -->
@@ -755,7 +768,13 @@
         <script type="text/javascript" src="js/project/carousel.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js">
+        </script>
+        <script type="text/javascript">
+            $( function() {
+                $( '#cd-dropdown' ).dropdown();
+            });
+        </script>
         <!-- instafeed -->
         <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
         <script type="text/javascript" src="js/project/instagram.js"></script>
