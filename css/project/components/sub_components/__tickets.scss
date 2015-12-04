@@ -1,4 +1,3 @@
-$ticket_container_width:175px;
 $book_button_height:35px;
 $booking_tab_height:65px;
 $booking_tab_padding:18px 15px 18px 30px;
@@ -7,14 +6,18 @@ $green_font_family:futura_bold;
 
  
 .main_nav{
+    border:none;
+    padding:0;
     .full-screen-container{
         position:relative;
+        
         .buy_tickets{
             width:$ticket_container_width;
-            margin-right:-200px;
+            margin-right:-201px;
             background-color:$green;
             height:95px;
             text-align: center;
+            position:relative;
             .uppercase{
                 display:block;
                 margin-top:35px;
@@ -97,6 +100,7 @@ $green_font_family:futura_bold;
                             }
                             &.link_row{
                                 padding-left:30px;
+                                margin-bottom:5px;
                                 a{
                                     color:#fff;
                                     text-decoration: underline;
@@ -192,6 +196,8 @@ $green_font_family:futura_bold;
                     font-size:$green_font_size;
                     font-family: $green_font_family;
                     @include text_shadow(1px,1px,#888);
+                    @include transition(all 0.4s ease);
+
                     .price{
                         font-size:23px;
                     }

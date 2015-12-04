@@ -34,6 +34,9 @@
     &.right-side{
         padding-left:300px
     }
+    &.no-padding{
+        padding:0;
+    }
 }
 
 @import '__more_menu.scss';

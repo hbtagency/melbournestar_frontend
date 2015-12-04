@@ -1,9 +1,21 @@
+$ticket_container_width:177px;
+
 .main_nav{
     height:95px;
     background-color:$nav_blue;
     text-transform:uppercase;
+    &.stick{
+        position:fixed;
+        top:0;
+        width:100%;
+        display:block;
+        margin:0;
+        z-index: 1000;
+        padding-left:15px;
+        padding-right:15px;
+    }
     .full-screen-container{
-        padding-right:200px;
+        padding-right:$ticket_container_width;
         height:95px;
         .left{
             float:left;
@@ -27,7 +39,6 @@
             border:none;
 
             ul
-                
                 li.root{
                     min-width:150px;
                     a{
@@ -46,12 +57,26 @@
                         &:active{
                             background-color:$head_blue;
                         }
+                        text-align:center;
+                        .arrow_down{
+                            background:url('../../../img/blue_arrow_down.png');
+                            background-size:cover;
+                            width:10px;
+                            height:5px;
+                            vertical-align: middle;
+                            margin-left:3px;
+                            margin-bottom: 2px;
+                        }
+                        span{
+                            display:inline-block;
+                        }
                     }
                     
 
                     .dropdown-menu{
                         background-color:rgba(0,0,0,0.6);
-                        
+                        right:0;
+                        left:auto;
                     }
                     .level-2{
                         padding:0;

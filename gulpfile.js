@@ -10,9 +10,9 @@ gulp.task('default', function() {
   browserSync.init({
         
         //change proxy server to your localhost
-        proxy: "http://localhost:80/melStar/melbournestar_frontend/new-home.html",
+        //proxy: "http://localhost:80/melStar/melbournestar_frontend/new-home.html",
 
-        //proxy: "http://localhost:80/melStar/new-home.html",
+        proxy: "http://localhost:80/melStar/new-home.html",
     });
 
   gulp.start('sass');
@@ -20,22 +20,25 @@ gulp.task('default', function() {
   watch('css/project/style.scss', batch(function (events, done) {
         gulp.start('sass', done);
     }));
+    
   watch(['css/project/components/*.scss', 'css/project/components/**/*.scss'], batch(function (events, done) {
         gulp.start('sass', done);
     }));
-    
 
   watch('css/cache/sassOutput/*.css', batch(function (events, done) {
         gulp.start('concat', done);
     }));
+    
   watch('css/cache/conOutput/*.css', batch(function (events, done) {
         gulp.start('minify', done);
     }));
+    
   watch('*.html', batch(function (events, done) {
         console.log('#=>html');
         return gulp.src('*.html')
               .pipe(browserSync.reload({stream:true}));
     }));
+    
   watch('plugins/*/*', batch(function (events, done) {
           gulp.start('sass', done);
     }));

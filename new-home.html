@@ -242,7 +242,7 @@
                     </div>
                     <!-- End of Top Nav -->
                     <!-- Main Nav -->
-                    <div class="main_nav">
+                    <div class="main_nav clearfix" id="main_navigation">
                         <div class="full-screen-container">
                             <!-- Mobile Menu Component -->
                             <div class="mobile-menu hidden-lg">
@@ -282,7 +282,6 @@
                                                     <img class="img-responsive" src="img/close_ticket.png"/>
                                                 </a>
                                             </div>
-                                            
                                         </div>
                                         <div class="accordion-group">
                                             <div class="accordion-heading collapsed_item">
@@ -465,7 +464,7 @@
                                         <!-- Link tag only if link is present in backend -->
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <span class="menu--link-text current-parent">Dropdown</span>
-                                            <span class="caret"></span>
+                                            <span class="arrow_down"></span>
                                         </a>
                                         <!-- Second level Nav Item -->
                                         <ul class="dropdown-menu level-2">
@@ -503,7 +502,7 @@
                         </div>
                     </div>
                     <!-- End of Featured-home -->
-                    <div class="featured_home_info">
+                    <div class="featured_home_info" id="featured_home_info">
                         <div class="full-screen-container">
                             <div class="col-sm-4 infomation">
                                 <div>
@@ -523,8 +522,9 @@
                                 <div class="info_content">
                                     SCHOOL HOLIDAY FUN THIS WINTER
                                 </div>
-                                <img src ='img/arrow.jpg'/>
-
+                                <a id="bouncing_arrow" class="clearfix bounce" href="#">
+                                    <img src ='img/arrow.jpg'/>
+                                </a>
                             </div>
                             <div class="col-sm-4 infomation hidden-xs">
                                 <div>
@@ -734,6 +734,8 @@
         <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
         <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
         <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
+        <script type="text/javascript" src="js/project/scroll_to_whatson.js"></script>
 
     </body>
 </html>
