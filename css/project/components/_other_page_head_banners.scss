@@ -1,0 +1,22 @@
+$banner_height:300px;
+.banner_area{
+    height:$banner_height;
+    position:relative;
+    .mask{
+        position:absolute;
+        width:100%;
+        background-color: rgba(0,0,0,0.4);
+        height:$banner_height;
+    }
+    .banner-heading{
+        color:#fff;
+        position:absolute;
+        bottom:15px;
+        h1{
+        }
+        &.sit_left{
+            left:30px;
+        }
+    }
+    
+}
