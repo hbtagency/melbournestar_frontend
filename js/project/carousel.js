@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var width = window.innerWidth;
-	
+
 	if(width < 812){
 		//display only 3 stories
 		var count = $('.whatson_content').length;
@@ -36,14 +36,15 @@ $(document).ready(function(){
 	  	});
 
 	  	$('.whats_on_carousel').slick({
-		  slidesToShow: 2,
-		  slidesToScroll: 1,
-		  autoplay: false,
-		  autoplaySpeed: 2000,
-		  focusOnSelect: false,
-		  infinite: true,
+			  slidesToShow: 2,
+			  slidesToScroll: 1,
+			  autoplay: false,
+			  autoplaySpeed: 2000,
+			  focusOnSelect: false,
+			  infinite: true,
 	  	});
 	}
+	
 	else {
 	  	$('.whats_on_carousel').slick({
 		  slidesToShow: 3,
@@ -66,6 +67,4 @@ $(document).ready(function(){
 	  	});
 	}
 
-  	
-  	
 });
