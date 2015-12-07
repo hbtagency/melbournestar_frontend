@@ -1,21 +1,28 @@
 $ticket_container_width:177px;
 
+
 .main_nav{
     height:95px;
     background-color:$nav_blue;
     text-transform:uppercase;
     
     
-    
     &.stick{
         position:fixed;
         top:0;
-        width:100%;
         display:block;
+        width:100%;
         margin:0;
         z-index: 1000;
-        padding-left:15px;
+        padding-left:25px;
         padding-right:15px;
+        margin-left:-30px;
+        border-left:30px solid #fff;
+        border-right:39px solid #fff;
+        background-color:$nav_blue_transparent;
+        .full-screen-container .mobile-menu button.navbar-toggle .icon-bar{
+            background-color:#fff;
+        }
     }
     .full-screen-container{
         padding-right:$ticket_container_width;

@@ -2,6 +2,7 @@
 $silver_gray: #eff0f2;
 $text_gray:#999999;
 $nav_blue:#002a5f;
+$nav_blue_transparent:rgba(0, 42, 95, 0.8);
 $head_blue:#1e2e41;
 $title_blue:#1e3044;
 $green:#92d400;
@@ -62,7 +63,12 @@ body{font-family: $font-fu-l}
         background-color:rgba(0, 0, 0, 0.6);
     }
 }
-a{cursor: pointer;}
+a{cursor: pointer;
+  color:#000;
+  &:hover{
+      color:#000;
+  }
+}
 //eg.@include transition(all 0.4s ease);
 .light-gray{background-color:$silver_gray}
 .black{background-color:#000;}
