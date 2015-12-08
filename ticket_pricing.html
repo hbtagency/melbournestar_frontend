@@ -21,7 +21,6 @@
         <header>
             <div id="body-mask" class="body-mask">
             </div>
-
             <!-- Mobile Menu -->
             <div class="mobile-menu-sidebar hidden-lg clearfix" id="leftMobileMenu">
                 <a id="close-mobile" href="#">
@@ -262,7 +261,17 @@
                             </div>
 
                             <!-- logo -->
-                            <div class="logo inline-block left" id="logo">
+                            <div class="rotating_logo_div logo left visible-lg">
+                                <a class="rotate_logo clearfix" id="rotate_logo_trigger">
+                                    <img src="img/wheel.png" id="rotate_logo"/>
+                                    <div class="logo_text">
+                                        <span class="white">Melbourne</span>
+                                        <span class="green">Star</span>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="logo inline-block left hidden-lg" id="logo">
                                 <a href="#" class="logo_span"></a>
                             </div>
 
@@ -271,8 +280,8 @@
                                 <span class="uppercase">Buy Ticket</span>
                                 <!-- Put buy ticket div in here but use absolute position -->
                                 <a class="book-ticket-button" id="book-ticket-button"/>
-                                BOOK YOUR TICKETS
-                                <img id="rotate" class="img-responsive" src="img/plus.png"/>
+                                    BOOK YOUR TICKETS
+                                    <img id="rotate" class="img-responsive" src="img/plus.png"/>
                                 </a>
                                 <!-- book-ticket-area-->
                                 <div class="book-ticket-area hidden" id="book-ticket-area">
@@ -486,8 +495,6 @@
                                     </li>
                                 </ul>
                             </nav>
-
-
                         </div>
                     </div>
                     <!-- End of Main Nav -->
@@ -510,7 +517,9 @@
         
         <!-- template content area -->
         <div class="container two_column template_content">
+                
             <div class="row">
+                <div class="col-md-1"></div>
                 <div class="left col-md-5 col-xs-12">
                     <h1>General admission</h1>
                     <p>Melbourne Star invites you to 
@@ -542,143 +551,209 @@
                     </ul>
                 </div>
                 <div class="right col-md-5 col-xs-12">
+                    <div class="book-your-ticket">
                     <h1>Book your tickets</h1>
                     <div class="book-ticket-area " id="book-ticket-area2">
-                                    <div class="accordion">
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading collapsed_item">
-                                                <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabOneInPage">
-                                                    <i class="icon-list-alt"></i>SINGLE FLIGHT
-                                                </a>
-                                            </div>
-                                            <div id="ticketTabOneInPage" class="accordion-body collapse" style="height: 0px; ">
-                                                <div class="accordion-inner">
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            adult ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            child ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Concession and senior flight: $30</a><br>
-                                                    </div>
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Family Discount</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading collapsed_item">
-                                                <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabTwoInPage">
-                                                    <i class="icon-list-alt"></i> day & NIGHT FLIGHT
-                                                </a>
-                                            </div>
-                                            <div id="ticketTabTwoInPage" class="accordion-body collapse" style="height: 0px; ">
-                                                <div class="accordion-inner">
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            adult ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            child ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Concession and senior flight: $30</a><br>
-                                                    </div>
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Family Discount</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-group">
-                                            <div class="accordion-heading collapsed_item">
-                                                <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabThreeInPage">
-                                                    <i class="icon-list-alt"></i>ANNUAL PASS
-                                                </a>
-                                            </div>
-                                            <div id="ticketTabThreeInPage" class="accordion-body collapse" style="height: 0px; ">
-                                                <div class="accordion-inner">
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            adult ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row white_row clearfix">
-                                                        <span class="inline-block ticket_type">
-                                                            child ticket
-                                                        </span>
-                                                        <span class="inline-block ticket_price">
-                                                            $34
-                                                        </span>
-                                                        <span class="inline-block ticket_number">
-                                                            <input type="number" value="1" />
-                                                        </span>
-                                                    </div>
-
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Concession and senior flight: $30</a><br>
-                                                    </div>
-                                                    <div class="input-row link_row">
-                                                        <a href="#">Family Discount</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sit_bottom_container clearfix">
-                                        <a class="view-cart">
-                                            View cart
-                                            <span class="price">
-                                                ($54)
-                                            </span>
+                            <div class="accordion">
+                                <div class="accordion-group">
+                                    <div class="accordion-heading collapsed_item">
+                                        <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabOneInPage">
+                                            <i class="icon-list-alt"></i>SINGLE FLIGHT
                                         </a>
                                     </div>
+                                    <div id="ticketTabOneInPage" class="accordion-body collapse" style="height: 0px; ">
+                                        <div class="accordion-inner">
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    adult ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    child ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row link_row">
+                                                <a href="#">Concession and senior flight: $30</a><br>
+                                            </div>
+                                            <div class="input-row link_row">
+                                                <a href="#">Family Discount</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="accordion-group">
+                                    <div class="accordion-heading collapsed_item">
+                                        <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabTwoInPage">
+                                            <i class="icon-list-alt"></i> day & NIGHT FLIGHT
+                                        </a>
+                                    </div>
+                                    <div id="ticketTabTwoInPage" class="accordion-body collapse" style="height: 0px; ">
+                                        <div class="accordion-inner">
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    adult ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    child ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row link_row">
+                                                <a href="#">Concession and senior flight: $30</a><br>
+                                            </div>
+                                            <div class="input-row link_row">
+                                                <a href="#">Family Discount</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-group">
+                                    <div class="accordion-heading collapsed_item">
+                                        <a class="accordion-toggle ticket_tab_rotate_trigger" data-toggle="collapse" data-parent="#leftMenu" href="#ticketTabThreeInPage">
+                                            <i class="icon-list-alt"></i>ANNUAL PASS
+                                        </a>
+                                    </div>
+                                    <div id="ticketTabThreeInPage" class="accordion-body collapse" style="height: 0px; ">
+                                        <div class="accordion-inner">
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    adult ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row white_row clearfix">
+                                                <span class="inline-block ticket_type">
+                                                    child ticket
+                                                </span>
+                                                <span class="inline-block ticket_price">
+                                                    $34
+                                                </span>
+                                                <span class="inline-block ticket_number">
+                                                    <input type="number" value="1" />
+                                                </span>
+                                            </div>
+
+                                            <div class="input-row link_row">
+                                                <a href="#">Concession and senior flight: $30</a><br>
+                                            </div>
+                                            <div class="input-row link_row">
+                                                <a href="#">Family Discount</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sit_bottom_container clearfix">
+                                <a class="view-cart">
+                                    View cart
+                                    <span class="price">
+                                        ($54)
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing" style="margin-top:30px;">
+                        <h1>Pricing</h1>
+                        <div class="stripe_table">
+                            <table class="table-striped">
+                                <tr class="header">
+                                    <th style="min-width:208px;">ticket type</th>
+                                    <th>single flight</th>
+                                    <th style="min-width:148px">day & night flight*</th>
+                                </tr>
+                                <tr>
+                                    <td>Adult</td>
+                                    <td>$34.00</td>
+                                    <td>$45.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Child(5 - 15 Years)</td>
+                                    <td>$20.00</td>
+                                    <td>$29.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Children(Up to 4 Years)</td>
+                                    <td>FREE</td>
+                                    <td>FREE</td>
+                                </tr>
+                                <tr>
+                                    <td>Family(1 Adult & 2 Children)</td>
+                                    <td>$60.00</td>
+                                    <td>$90.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Family(2 Adult & 1 Child)</td>
+                                    <td>$72.00</td>
+                                    <td>$90.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Family - Additional Children</td>
+                                    <td>$16.00</td>
+                                    <td>$24.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Seniors/concession</td>
+                                    <td>$30.00</td>
+                                    <td>$41.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Adult Groups(Min. Of 10)</td>
+                                    <td>$28.00</td>
+                                    <td>$36.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Child groups(Min. Of 10)</td>
+                                    <td>$16.00</td>
+                                    <td>$27.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Annual Pass</td>
+                                    <td colspan="2">$79.00 Per Person</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <p>General Admission tickets are valid for one year from the date of purchase.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -694,10 +769,6 @@
                 </div>
                 <div class="row subscribe_form">
                     <div class="interst inline-block">
-                        <!-- <select>
-                            <option value="interests">INTERESTS</option>
-                            <option value="test">TEST</option>
-                        </select> -->
                         <select id="cd-dropdown" class="cd-select">
                             <option value="-1" selected>INTERESTS</option>
                             <option value="1" >SPORT</option>
@@ -714,7 +785,6 @@
                     <div class="join_button inline-block">
                         <button><a href="#">JOIN</a></button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -821,8 +891,8 @@
         <script type="text/javascript" src="js/project/carousel.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js">
-        </script>
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
+        <script type="text/javascript" src="js/project/striped_table.js"></script>
         <script type="text/javascript">
             $( function() {
                 $( '#cd-dropdown' ).dropdown();
@@ -839,6 +909,8 @@
         <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
         <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
         <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
+
 
     </body>
 </html>

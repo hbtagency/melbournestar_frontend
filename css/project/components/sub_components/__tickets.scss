@@ -5,6 +5,7 @@ $green_font_size:20px;
 $green_font_family:futura_bold;
 
 .two_column{
+    .book-your-ticket{
     .book-ticket-area{
         background-color:$silver_gray;
         position:relative;
@@ -16,9 +17,28 @@ $green_font_family:futura_bold;
         .accordion{
             .accordion-heading{
                 background-color:$head_blue !important;
+                a.accordion-toggle{
+                    padding-top:23px !important;
+                    i.icon-list-alt{
+                        margin-top:8px !important;
+                    }
+                }
             }
-            .accordion-group .accordion-inner .input-row.link_row a{
-                color:$head_blue;
+            .accordion-group .accordion-inner {
+                .input-row{
+                    .ticket_type{
+                        margin-top:9px;
+                    }
+                    .ticket_price{
+                        margin-top:0px;
+                    }
+                    
+                }
+                .link_row{
+                    a{
+                        color:$head_blue;
+                    }
+                }
             }
             
         }
@@ -29,8 +49,7 @@ $green_font_family:futura_bold;
                 padding:15px;
             }
         }
-
-        
+    }
     }
 }
 
@@ -62,9 +81,9 @@ $green_font_family:futura_bold;
                         width:90%;
                         .ticket_type{
                             font-family: $green_font_family;
-                            @include text_shadow(1px,1px,#888);
                             margin-top:7px;
                             width:130px;
+                            text-transform: uppercase;
                         }
                         .ticket_price{
                             font-weight: bold;
@@ -180,7 +199,8 @@ $green_font_family:futura_bold;
             font-family: $green_font_family;
             @include text_shadow(1px,1px,#888);
             @include transition(all 0.4s ease);
-
+            text-transform:uppercase;
+            font-weight:bold;
             .price{
                 font-size:23px;
             }
