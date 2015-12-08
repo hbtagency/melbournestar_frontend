@@ -1,9 +1,8 @@
 $bounce_height:6px;
 $bounce_height_back:3px;
 .bounce {
- position: absolute;
- left:0;
- right:0;
+ position: relative;
+ margin: auto;
  animation: bounce 2s infinite;
  -webkit-animation: bounce 2s infinite;
  -moz-animation: bounce 2s infinite;

@@ -1,0 +1,36 @@
+$rotation_time:38000ms;
+
+.rotating_logo_div{
+    width:265px !important;
+    .rotate_logo{
+        .over{
+            transform: rotate( 1440deg );            
+            transition: transform $rotation_time ease;
+        }
+    img{
+        float:left;
+    }
+    .logo_text{
+        float:right;
+        padding-top:9px;
+        text-transform:uppercase;
+        .white{
+            color:#fff;
+            font-size:25px;
+            font-family:$font-fu-book !important;
+
+        }
+        .green{
+            color:#77bf4b;
+            font-size:25px;
+            font-family:$font-fu-book !important;
+        }
+    }
+    }
+}
+
+.main_nav .full-screen-container .logo.rotating_logo_div{
+    margin-left:30px !important;
+}
+
+

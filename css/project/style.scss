@@ -1,14 +1,30 @@
+/* Global font, parammeters, css reset ...etc */
 @import 'components/_font.scss'; 
 @import 'components/_global.scss'; 
+
+/* font global style for other pages eg: h1,h2.. p, ul... span */ 
+@import 'components/_template_content_fonts.scss';
+
+/* Site-wide used sections */
 @import 'components/_top_nav.scss'; 
 @import 'components/_main_nav.scss'; 
+@import 'components/_mobile_menu.scss';
+@import 'components/_footer.scss';
+@import 'components/_subscribe.scss';
+@import 'components/_body_mask.scss';
+
+/* Home page */
 @import 'components/_feature_home.scss'; 
 @import 'components/_feature_home_info.scss';
 @import 'components/_whats_on.scss';
 @import 'components/_whats_new.scss';
-@import 'components/_mobile_menu.scss';
 @import 'components/_instagram.scss';
-@import 'components/_body_mask.scss';
-@import 'components/_subscribe.scss';
-@import 'components/_footer.scss';
+
+/* banner one with no bottom */
 @import 'components/_other_page_head_banners.scss';
+
+
+/* ticket page */
+@import 'components/_two_column_container.scss';
+@import 'components/sub_components/__striped_table.scss';
+ 

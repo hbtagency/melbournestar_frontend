@@ -1,3 +1,7 @@
+body{
+    padding:0 30px;
+}
+
 .box-container{
     @include transition(all 1s ease);
     .left-bar{
@@ -18,11 +22,11 @@
             }
         }
     }
+    
     .right-bar{
         margin-right:-30px;
     }
 
-    padding:0 30px 0 30px;
     width:100%;
     .box-sidebar{
         width:55px;
@@ -30,12 +34,14 @@
     }
     .box-center-container{
         width:100%;
+
     }
     &.right-side{
         padding-left:300px
     }
     &.no-padding{
         padding:0;
+        margin-top: -40px;
     }
 }
 
@@ -78,6 +84,10 @@
     }
     .featured-home{
         height:454px;
-    }                                            
+    }       
+    
+    body{
+        padding:0;
+    }
 }
 
