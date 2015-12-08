@@ -8,6 +8,7 @@ hover_element2.hover(function(){
     if(!rotate2.hasClass('over')){
         rotate2.addClass('over');
     }
+
 });
 
 hover_element2.mouseleave(function(){
@@ -16,7 +17,7 @@ hover_element2.mouseleave(function(){
         window.setTimeout( function () { 
             rotate2.removeClass('over');
             lock = false;
-        }, 40000 );
+        }, 38000 );
         
     }
 });
