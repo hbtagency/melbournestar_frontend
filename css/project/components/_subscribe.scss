@@ -43,7 +43,7 @@ $join_button_width: 80px;
 			width: 30%;
 			margin-right: 15px;
 			border: 0px;
-			height: 60px;
+			height: 50px;
 			padding-left: 26px;
 		}
 
@@ -51,11 +51,11 @@ $join_button_width: 80px;
 
 	.join_button{
 		margin-right: -$join_button_width;
-		padding-top: 20px;
+		padding-top: 15px;
 		width: $join_button_width + 40;
 		float: right;
 		background-color: black;	
-		height: 60px;
+		height: 50px;
 
 		a{
 			color: white;

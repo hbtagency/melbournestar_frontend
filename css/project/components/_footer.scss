@@ -14,10 +14,10 @@ $footer_bottom_font_size: 13px;
 	text-align: center;
 
 	.social_links{
-		float: center;
 		position: relative;
 		right: 20px;
-		margin-bottom: 50px;
+		width: 400px;	
+		margin: 0 auto 50px auto;
 
 		span{
 			margin-left: 20px;
