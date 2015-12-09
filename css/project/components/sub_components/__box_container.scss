@@ -34,7 +34,6 @@ body{
     }
     .box-center-container{
         width:100%;
-
     }
     &.right-side{
         padding-left:300px
@@ -91,3 +90,11 @@ body{
     }
 }
 
+@media (min-width:$screen-lg-min){
+    .box-container{
+        .box-center-container{
+            min-height:430px;
+        }
+    }
+
+}
