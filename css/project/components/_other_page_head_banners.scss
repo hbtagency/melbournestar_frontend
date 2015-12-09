@@ -1,7 +1,10 @@
 $banner_height:300px;
-.banner_area{
+    .banner_area{
     height:$banner_height;
     position:relative;
+    &.mgb70{
+        margin-bottom: 70px;
+    }
     .mask{
         position:absolute;
         width:100%;

@@ -6,12 +6,12 @@ $rotation_time:800ms;
     width: 100px;
 }
 
-#rotate.over{
+#rotate.over,.ticket_tab_rotate_trigger .over{
     transform: rotate( -180deg );            
     transition: transform $rotation_time ease;
 } 
 
-#rotate.out{
+#rotate.out,.ticket_tab_rotate_trigger .out{
     transform: rotate( -360deg );
     transition: transform $rotation_time ease;
 } 
