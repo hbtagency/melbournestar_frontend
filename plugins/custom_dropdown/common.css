@@ -60,6 +60,7 @@
 	color: #bcbcbc;
 	cursor: pointer;
 	font-weight: 700;
+	padding-right: 90px;
 }
 
 .cd-dropdown > span,
@@ -71,6 +72,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	padding-right: 90px;
 }
 
 .cd-dropdown > span span[class^="icon-"],
