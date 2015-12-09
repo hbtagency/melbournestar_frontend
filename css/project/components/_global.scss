@@ -25,8 +25,6 @@ $screen-md-max: ($screen-lg-min - 1);
 $screen-lg-m-min:1500px;
 $screen-lg-max: ($screen-lg-m-min - 1);
 
-
-
 /* This section needs to be finished */
 $font-fu-l: "futura_lightregular"; 
 $font-fu-book: "futura_bkbook";
@@ -107,6 +105,10 @@ a{cursor: pointer;
 .button-black {
     border: 2px solid #000;
     color: #000 !important;
+    &:hover{
+        text-decoration: none;
+        box-shadow: inset 0 0 0 2px #000;
+    }
 }
 
 /* End of global */
