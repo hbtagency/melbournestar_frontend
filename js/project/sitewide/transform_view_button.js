@@ -1,7 +1,6 @@
-    //var anchor = document.querySelectorAll('button');
-    var anchor = $('#view_more_button');
+var anchor = $('#view_more_button');
     
-    [].forEach.call(anchor, function(anchor){
+[].forEach.call(anchor, function(anchor){
       var open = false;
       anchor.onclick = function(event){
         event.preventDefault();

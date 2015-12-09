@@ -1,3 +1,4 @@
+//For tickets
 var hover_element = $('#book-ticket-button');
 var rotate = $('#rotate' );
 

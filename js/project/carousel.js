@@ -1,3 +1,4 @@
+//Home
 $(document).ready(function(){
 	var width = window.innerWidth;
 

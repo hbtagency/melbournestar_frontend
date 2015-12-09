@@ -13,6 +13,7 @@
         <!-- JS init -->
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+        <!-- For dropdown effect on subscription section and this has to be on top of body -->
         <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
 
     </head>
@@ -108,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="box-container clearfix" id="box-container" >
+            <div class="box-container clearfix" id="box-container">
                 <div class="left-bar box-sidebar pull-left" id="left-bar">
                     <!-- More Menu Component -->
                     <button type="button" role="button" id="view_more_button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
@@ -175,7 +176,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;background-position: 50% 50%;">
+                <div class="box-center-container clearfix right-side">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -244,9 +245,17 @@
                     <!-- End of Top Nav -->
                     <!-- Main Nav -->
                     <div class="main_nav clearfix" id="main_navigation">
+
+
                         <div class="full-screen-container">
                             <!-- Mobile Menu Component -->
                             <div class="mobile-menu hidden-lg">
+                                <!--
+                                <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left pull-right visible-lg">
+                                  <span class="lines"></span>
+                                </button>-->
+
+
                                 <button type="button" class="navbar-toggle collapsed pull-left lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -255,7 +264,7 @@
                                 </button>
                             </div>
 
-                            <!-- logo -->
+                                                       <!-- logo -->
                             <div class="rotating_logo_div logo left visible-lg">
                                 <a class="rotate_logo clearfix" id="rotate_logo_trigger">
                                     <img src="img/wheel.png" id="rotate_logo"/>
@@ -495,179 +504,59 @@
                         </div>
                     </div>
                     <!-- End of Main Nav -->
-                    <!-- Banner area -->
-                    <div class="banner_area">
-                        <div class="mask"></div>
-                        <div class="banner-heading sit_left clearfix">
+                    <!-- Featured home area -->
+                    <div id="featured_area" class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:cover;background-position:center center;">
+                        <div class="banner-text clearfix">
                             <h1>
-                                Tickets and Pricing
+                                IT'S MORE THAN A VIEW.
+                                IT'S AN EXPRIENCE.
                             </h1>
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                            <a href='#' class="button button-white">
+                                BOOK NOW
+                            </a>
+                        </div>
+                        <div class="floating-star">
+                            <img class="img-responsive" src ='img/star.png'/>
                         </div>
                     </div>
-                    <!-- End of Banner -->
+                    <!-- End of Featured-home -->
+                    <div class="featured_home_info" id="featured_home_info">
+                        <div class="full-screen-container">
+                            <div class="col-sm-4 infomation">
+                                <div>
+                                    <img class="nav_icon" src ='img/nav-icon.jpg'/>
+                                    GETTING HERE
+                                </div>
+                                <div class="info_content">
+                                    101 Waterfront way, Docklands,<br>
+                                    VIC 3008, Melbourne
+                                </div>
+                            </div>
+                            <div class="col-sm-4 infomation hidden-xs">
+                                <div>
+                                    <!--<img class="nav_icon" src ='img/whatson_icon.jpg'/>-->
+                                    WHAT'S ON
+                                </div>
+                                <div class="info_content">
+                                    SCHOOL HOLIDAY FUN THIS WINTER
+                                </div>
+                                <a id="bouncing_arrow" class="clearfix bounce" href="#">
+                                    <img src ='img/arrow.jpg'/>
+                                </a>
+                            </div>
+                            <div class="col-sm-4 infomation hidden-xs">
+                                <div>
+                                    OPEN TODAY
+                                </div>
+                                <div class="info_content">
+                                    <!--<img class="nav_icon hidden-sm" src ='img/open_today.jpg'/>-->
+                                    10AM TO 10PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Featured_home_info -->
                 </div>
                 <div class="right-bar box-sidebar pull-right"></div>
             </div>
         </header>
-
-      
-                <!-- Subscribe -->
-        <div class="subscribe full-width visible-lg">
-            <div class="container">
-                <div class="row">
-                    <div class="subscribe_title">
-                        RECEIVE OFFERS AND NEWS DIRECT TO YOUR INBOX
-                    </div>
-                </div>
-                <div class="row subscribe_form">
-                    <div class="interst inline-block">
-                        <!-- <select>
-                            <option value="interests">INTERESTS</option>
-                            <option value="test">TEST</option>
-                        </select> -->
-                        <select id="cd-dropdown" class="cd-select">
-                            <option value="-1" selected>INTERESTS</option>
-                            <option value="1" >SPORT</option>
-                            <option value="2" >GAME</option>
-                            <option value="3" >TV</option>
-                            <option value="4" >OTHERS</option>
-                        </select>
-                    </div>
-                    <div class="fluid_container inline-block">
-                        <input type="text" class="inline-block" placeholder="FIRST NAME*"/>
-                        <input type="text" class="inline-block" placeholder="LAST NAME*"/>
-                        <input type="text" class="inline-block" placeholder="EMAIL ADDRESS*"/>
-                    </div>
-                    <div class="join_button inline-block">
-                        <button><a href="#">JOIN</a></button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End of Subscribe -->
-        
-        
-        <!-- End of Subscribe -->
-        <footer>
-            <div class="container">
-                <div class="lets_connect row">
-                    <div class="footer_title">
-                        LET'S CONNECT
-                    </div>
-                    <div class="social_links">
-                        <span><a href="#"><img src="img/tripadvisor_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/instagram_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/youtube_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/facebook_icon.jpg" /></a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="full-width footer_wrapper clearfix">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer_col">
-                        <div class="footer_title">
-                            GETTING HERE
-                        </div>
-                        <div class="address">
-                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
-                        </div>
-                        <div class="direction">
-                            <a href="#">
-                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer_col">
-                        <div class="footer_title">
-                            INSTAGRAM
-                        </div>
-                        <div id="instafeed2">
-                        </div>
-                    </div>
-                    <div class="col-md-4 footer_col">
-                        <div class="footer_title">
-                            QUICK LINKS
-                        </div>
-                        <div class="footer_links">
-                            <div><a>Plan Your Visit</a></div>
-                            <div><a>Pricing &amp; Ticketing</a></div>
-                            <div><a>Buy Tickets</a></div>
-                            <div><a>Functions &amp; Events</a></div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-            </div>
-            <div class="container copyright_area">
-                <div class="row">
-                    <div class="footer_bottom_left inline-block">
-                        &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
-                    </div>
-                    <div class="pull-right inline-block visible-lg">
-                        <ul class="footer_bottom_links">
-                            <li class="root inline-block">
-                                <a href="#" class="inline-block " >
-                                    Terms &amp; Conditions
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Disclaimer
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    about us
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Sitemap
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Js used only in home page -->
-        <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/project/carousel.js"></script>
-        <script type="text/javascript" src="js/project/hoverEffect.js"></script>
-        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js">
-        </script>
-        <script type="text/javascript">
-            $( function() {
-                $( '#cd-dropdown' ).dropdown();
-            });
-        </script>
-        <!-- instafeed -->
-        <!--
-        <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
-        <script type="text/javascript" src="js/project/instagram.js"></script>-->
-
-        <!-- The following js files has been used site widely -->
-        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
-
-    </body>
-</html>

@@ -1,4 +1,3 @@
-
 $("#book-ticket-button").click(function(){
     if($("#book-ticket-area").hasClass('hidden')){
         $("#book-ticket-area").removeClass('hidden');
