@@ -1,0 +1,26 @@
+@media (max-width: $screen-sm-max) {
+	.footer_col{
+		text-align: center;
+
+		.footer_title{
+			margin-top: 30px;
+		}
+	}
+
+	.direction{
+		display: none;
+	}
+
+	.copyright_area{
+
+		.row{
+			text-align: center;
+		}
+
+		.footer_bottom_left{
+			float: none !important;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+}
