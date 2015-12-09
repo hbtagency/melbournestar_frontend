@@ -24,3 +24,19 @@
 		}
 	}
 }
+
+@media (max-width: 380px){
+	.lets_connect{
+		.social_links{
+			width: 100px;
+
+			span{
+				a{
+					img{
+						margin-top: 40px;
+					}
+				}
+			}
+		}
+	} 
+}
