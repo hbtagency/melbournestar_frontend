@@ -38,6 +38,7 @@ $font-fu-bold: "futura_bold";
     -o-transition: $transition_string;
     transition: $transition_string;
 }
+//@include transition(all 0.3s ease);
 
 @mixin text_shadow($param1,$param2,$color){
     text-shadow: $param1 $param2 1px $color;

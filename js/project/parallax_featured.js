@@ -1,5 +1,6 @@
+var parralaxHero = $('#parralax-hero');
+
 $(document).ready(function() {
-   
     var movementStrength = 20;
     //var height = movementStrength / $(window).height();
     var width = movementStrength / $(window).width();
@@ -14,11 +15,11 @@ $(document).ready(function() {
             //var newvalueY = height * pageY * -1 - 50;
             //$(this).css("background-size","110% auto");
             if(first_hit){
-                zoom($(this),100,105);
+                zoom(parralaxHero,100,105);
                 first_hit = false;
             }else{
                 if(animation_completed){
-                    $(this).css("background-size","110% auto");
+                    parralaxHero.css("background-size","110% auto");
                 }
             }
             moveBackground(newvalueX);
@@ -26,16 +27,16 @@ $(document).ready(function() {
     });
     $("#featured_area").mouseleave(function(e){
         first_hit = true;
-        zoom($(this),105,100);
+        zoom(parralaxHero,105,100);
         animation_completed = false;
-        $(this).css("background-position","center center");
+        parralaxHero.css("background-position","center bottom");
     });
     
 });
 
 
 function moveBackground(distance){
-    $('#featured_area').css("background-position-x", distance+"px");
+    parralaxHero.css("background-position-x", distance+"px");
 }
 
 function zoom(container,from,to){

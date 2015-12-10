@@ -1,5 +1,5 @@
 //Home
-$(document).ready(function(){
+$(window).load(function(){
 	var width = window.innerWidth;
 
 	if(width < 812){

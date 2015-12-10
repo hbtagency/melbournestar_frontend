@@ -176,7 +176,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side">
+                <div class="box-center-container clearfix right-side horrizontal-parallax-banner" id="parralax-hero" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:110% auto;background-position:left top;">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -243,6 +243,9 @@
                         </div>
                     </div>
                     <!-- End of Top Nav -->
+                    <div id="navplacehoder" class="navplacehoder hidden" style="opacity: 0;">
+                        
+                    </div>
                     <!-- Main Nav -->
                     <div class="main_nav clearfix" id="main_navigation">
 
@@ -499,13 +502,11 @@
                                     </li>
                                 </ul>
                             </nav>
-
-
                         </div>
                     </div>
                     <!-- End of Main Nav -->
                     <!-- Featured home area -->
-                    <div id="featured_area" class="featured-home" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:cover;background-position:center center;">
+                    <div id="featured_area" class="featured-home">
                         <div class="banner-text clearfix">
                             <h1>
                                 IT'S MORE THAN A VIEW.
@@ -520,23 +521,23 @@
                         </div>
                     </div>
                     <!-- End of Featured-home -->
-                    <div class="featured_home_info" id="featured_home_info">
+                    <div class="featured_home_info clearfix" id="featured_home_info">
                         <div class="full-screen-container">
                             <div class="col-sm-4 infomation">
-                                <div>
+                                <h3>
                                     <img class="nav_icon" src ='img/nav-icon.jpg'/>
                                     GETTING HERE
-                                </div>
+                                </h3>
                                 <div class="info_content">
                                     101 Waterfront way, Docklands,<br>
                                     VIC 3008, Melbourne
                                 </div>
                             </div>
                             <div class="col-sm-4 infomation hidden-xs">
-                                <div>
+                                <h3>
                                     <!--<img class="nav_icon" src ='img/whatson_icon.jpg'/>-->
                                     WHAT'S ON
-                                </div>
+                                </h3>
                                 <div class="info_content">
                                     SCHOOL HOLIDAY FUN THIS WINTER
                                 </div>
@@ -545,9 +546,9 @@
                                 </a>
                             </div>
                             <div class="col-sm-4 infomation hidden-xs">
-                                <div>
+                                <h3>
                                     OPEN TODAY
-                                </div>
+                                </h3>
                                 <div class="info_content">
                                     <!--<img class="nav_icon hidden-sm" src ='img/open_today.jpg'/>-->
                                     10AM TO 10PM
@@ -564,10 +565,10 @@
         <!-- What's On -->
         <div class="whats_on">
             <div class="container">
-                <div>WHAT'S ON</div>
+                <h1>WHAT'S ON</h1>
                 <div class="whats_on_carousel row">
                     <!-- Template -->
-                    <div class="col-md-4 whatson_content">
+                    <div class="col-md-4 whatson_content clearfix">
 
                         <div class="image_wrapper">
                             <a href="#"><img class="img-responsive whatson_carousel_img" src ='img/whatson_img1.jpg' /></a>
@@ -587,7 +588,7 @@
 
                     </div>
                     <!-- End of Template -->
-                    <div class="col-md-4 whatson_content">
+                    <div class="col-md-4 whatson_content clearfix">
                         <div class="image_wrapper">
                             <a href="#"><img class="img-responsive whatson_carousel_img" src = 'img/whatson_img2.jpg' /></a>
                             <span class="whatson_hover_content"><span></span></span>
@@ -604,7 +605,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 whatson_content">
+                    <div class="col-md-4 whatson_content clearfix">
                         <div class="image_wrapper">
                             <a href="#"><img class="img-responsive whatson_carousel_img" src = 'img/whatson_img3.jpg' /></a>
                             <span class="whatson_hover_content"><span></span></span>
@@ -648,7 +649,7 @@
         <div class="whats_new" style="background:url('img/whatsnew_bg_fullscreen.jpg') no-repeat;   background-size:cover;">
             <div class="container">
                 <div class="row">
-                    <div class="whats_news_title">WHAT'S NEWS</div>
+                    <h1 class="whats_news_title">WHAT'S NEWS</h1>
                 </div>
                 <div class="whats_new_carousel row">
                     <!-- Template -->
@@ -725,8 +726,9 @@
         <!-- Instagram-->
         <div class="instagram container">
             <div class="row">
-                <div class="instagram_title">INSTAGRAM</div>
-                <div class="instagram_subtitle">@MELBOURNESTAR | #MELBOURNESTAR
+                <h1 class="instagram_title">INSTAGRAM</h1>
+                <div class="instagram_subtitle">
+                    @MELBOURNESTAR | #MELBOURNESTAR
                 </div>
             </div>
             <div class="row ">
@@ -739,7 +741,12 @@
         <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
         <script type="text/javascript" src="js/project/carousel.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
+                <script type="text/javascript" src="js/project/parallax_featured_scroll.js"></script>
+
+        <!--
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
+        -->
+        <script type="text/javascript" src="js/project/parallax_featured_scroll.js"></script>
         <script type="text/javascript" src="js/project/scroll_to_whatson.js"></script>
         <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
         <script type="text/javascript" src="js/project/instagram.js"></script>
@@ -797,7 +804,7 @@
             <div class="full-width footer_wrapper clearfix">
                 <div class="container">
                 <div class="row">
-                    <div class="col-md-4 footer_col">
+                    <div class="col-sm-4 footer_col">
                         <div class="footer_title">
                             GETTING HERE
                         </div>
@@ -810,14 +817,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 footer_col">
+                    <div class="col-sm-4 footer_col">
                         <div class="footer_title">
                             INSTAGRAM
                         </div>
                         <div id="instafeed2">
                         </div>
                     </div>
-                    <div class="col-md-4 footer_col">
+                    <div class="col-sm-4 footer_col">
                         <div class="footer_title">
                             QUICK LINKS
                         </div>

@@ -9,6 +9,8 @@ $rotation_time:19000ms;
         .over{
             transform: rotate( 360deg );            
             transition: transform $rotation_time linear;
+            -webkit-transform: rotate( 360deg );     
+            -webkit-transition: transform $rotation_time linear;
         }
     img{
         float:left;

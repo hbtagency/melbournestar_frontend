@@ -1,6 +1,9 @@
 // Mobile View 1 story 2nd level(flexible width)
 @media (max-width: 556px) {
 	.whats_new{
+                .whats_news_title{
+                    padding-top:15px;
+                }
 		.whats_new_carousel{
 			width: 100%;
 			margin: 0 auto;

@@ -1,7 +1,7 @@
 $(window).scroll(function(){
 	var currentHeight = $(window).scrollTop();
-
-	if(currentHeight > 200){
+        var sticky_point = $(".banner_area").first().height();
+	if(currentHeight > sticky_point){
 		$('.sticky_menu_2').addClass('stickyMenu');
 		// alert("added");
 	}

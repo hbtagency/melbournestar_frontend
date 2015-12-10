@@ -11,11 +11,16 @@
         display:block;
         text-align: center;
         margin:auto;
-        margin-top: 150px;
         min-height:250px;
+        position:absolute;
+        left:0;
+        right:0;
+        top:10%;
         color: white;
         z-index: 10;
         background-color:rgba(0,0,0,0.4);
+        padding:15px;
+        
     }
     
     .floating-star{

@@ -76,3 +76,19 @@
         }
     }
 }
+
+@media (max-width: $screen-xxxs-max) {  
+    .main_nav{
+        .full-screen-container{
+            .logo{
+                margin-right:5px; 
+            }
+            .mobile-menu{
+                margin-left:0;
+                .navbar-toggle{
+                    padding-left:0;
+                }
+            }
+        }
+    }
+}
