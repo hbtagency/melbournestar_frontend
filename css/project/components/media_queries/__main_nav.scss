@@ -1,7 +1,11 @@
-
 @media (max-width: $screen-md-max) {    
     .main_nav {
         background-color:$nav_blue;
+        position:absolute;
+        top:0;
+       left:0;
+       width:100%;
+       z-index:100;
         .full-screen-container{
             padding-left:0;
             padding-right:0;
@@ -85,10 +89,18 @@
             }
             .mobile-menu{
                 margin-left:0;
-                .navbar-toggle{
+                button.navbar-toggle{
                     padding-left:0;
+                    margin-top:22px;
+                    .icon-bar{
+                        width:20px;
+                        height:3px;
+                        
+                    }
                 }
             }
+            
+          
         }
     }
 }

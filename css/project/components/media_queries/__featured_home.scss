@@ -28,7 +28,7 @@
 
 @media (min-width:$screen-sm-min) and (max-width:$screen-sm-max){
     .featured-home{
-        height:254px;
+        height:303px;
         .floating-star{
             width:150px;
             left:-50px;
@@ -51,7 +51,7 @@
 }
 @media (min-width:$screen-xs-min) and (max-width:$screen-xs-max){
     .featured-home{
-        height:200px;
+        height:230px;
         background-size:150% !important;
         .floating-star{
             width:150px;
@@ -81,7 +81,7 @@
 
 @media  (min-width:$screen-xxs-min) and (max-width:$screen-xxs-max){
     .featured-home{
-        height:130px;
+        height:150px;
         background-size:150% !important;
         .floating-star{
             width:100px;
@@ -125,7 +125,7 @@
 }
 @media  (max-width:$screen-xxxs-max){
     .featured-home{
-        height:100px;
+        height:130px;
         background-size:150% !important;
         .floating-star{
             width:60px;

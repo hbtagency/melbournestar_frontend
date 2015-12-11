@@ -15,7 +15,29 @@
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
         <!-- For dropdown effect on subscription section and this has to be on top of body -->
         <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
+        <script language="javascript">
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+            if (isSafari) {
+                loadjscssfile("css/final/safari.css", "css") ////dynamically load and add this .css file
+            }
 
+            function loadjscssfile(filename, filetype) {
+                /*if (filetype==="js"){ //if filename is a external JavaScript file
+                 var fileref=document.createElement('script');
+                 fileref.setAttribute("type","text/javascript");
+                 fileref.setAttribute("src", filename);
+                 }
+                 else */
+                if (filetype === "css") { //if filename is an external CSS file
+                    var fileref = document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", filename);
+                }
+                if (typeof fileref !== "undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
+        </script>
     </head>
 
     <body>
@@ -109,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="box-container clearfix" id="box-container">
+            <div class="box-container home_box clearfix" id="box-container">
                 <div class="left-bar box-sidebar pull-left" id="left-bar">
                     <!-- More Menu Component -->
                     <button type="button" role="button" id="view_more_button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
@@ -176,7 +198,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side horrizontal-parallax-banner" id="parralax-hero" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:110% auto;background-position:left top;">
+                <div class="box-center-container clearfix right-side horrizontal-parallax-banner" id="parralax-hero" style="background:url('img/feature_bg_fullscreen.jpg') no-repeat;background-size:110% auto;">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -243,11 +265,9 @@
                         </div>
                     </div>
                     <!-- End of Top Nav -->
-                    <div id="navplacehoder" class="navplacehoder hidden" style="opacity: 0;">
-                        
-                    </div>
+
                     <!-- Main Nav -->
-                    <div class="main_nav clearfix" id="main_navigation">
+                    <div class="main_nav home_nav clearfix" id="main_navigation">
 
 
                         <div class="full-screen-container">
@@ -267,7 +287,7 @@
                                 </button>
                             </div>
 
-                                                       <!-- logo -->
+                            <!-- logo -->
                             <div class="rotating_logo_div logo left visible-lg">
                                 <a class="rotate_logo clearfix" id="rotate_logo_trigger">
                                     <img src="img/wheel.png" id="rotate_logo"/>
@@ -646,18 +666,109 @@
         </div>
         <!-- End of What's on -->
         <!-- What's New -->
-        <div class="whats_new" style="background:url('img/whatsnew_bg_fullscreen.jpg') no-repeat;   background-size:cover;">
+        <div class="whats_new_container" style="background:url('img/whatsnew_bg_fullscreen.jpg') no-repeat;background-size:cover;">
             <div class="container">
                 <div class="row">
-                    <h1 class="whats_news_title">WHAT'S NEWS</h1>
+                    <h1>WHAT'S NEWS</h1>
+                </div>
+                <div class="row">
+                    <div class="slick-carousel">
+                        <div class="autoplay">
+                            <div class="item">
+                                <div class="img-div clearfix">
+                                    <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img1.jpg' />
+                                    <div class="whats_new_mask">
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsnew_carousel_textarea clearfix">
+                                    <div class="whatsnew_carousel_title">
+                                        MELBOURNE STAR ANNOUNCES ITS FIRST COMMUNITY PARTNER
+                                    </div>
+                                    
+                                    <div class="whatsnew_play_button">
+                                        <a href="#"><img class="center" style="margin-bottom:15px" src="img/play_icon.png" />WATCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img-div clearfix">
+                                    <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img1.jpg' />
+                                    <div class="whats_new_mask">
+                                    </div>
+                                </div>
+                                <div class="whatsnew_carousel_textarea clearfix">
+                                    <div class="whatsnew_carousel_title">
+                                        MELBOURNE STAR ANNOUNCES ITS FIRST COMMUNITY PARTNER
+                                    </div>
+                                    
+                                    <div class="whatsnew_play_button">
+                                        <a href="#"><img class="center" style="margin-bottom:15px" src="img/play_icon.png" />WATCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                               <div class="img-div clearfix">
+                                    <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img1.jpg' />
+                                    <div class="whats_new_mask">
+                                    </div>
+                                </div>
+                                <div class="whatsnew_carousel_textarea clearfix">
+                                    <div class="whatsnew_carousel_title">
+                                        MELBOURNE STAR ANNOUNCES ITS FIRST COMMUNITY PARTNER
+                                    </div>
+                                    
+                                    <div class="whatsnew_play_button">
+                                        <a href="#"><img class="center" style="margin-bottom:15px" src="img/play_icon.png" />WATCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img-div clearfix">
+                                    <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img1.jpg' />
+                                    <div class="whats_new_mask">
+                                    </div>
+                                </div>
+                                <div class="whatsnew_carousel_textarea clearfix">
+                                    <div class="whatsnew_carousel_title">
+                                        MELBOURNE STAR ANNOUNCES ITS FIRST COMMUNITY PARTNER
+                                    </div>
+                                    
+                                    <div class="whatsnew_play_button">
+                                        <a href="#"><img class="center" style="margin-bottom:15px" src="img/play_icon.png" />WATCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="controls prev">
+                            <a href="javascript:;">
+                                <img src='plugins/slick/carousel_left_white.png'/>
+                            </a>
+                        </span>
+                        <span class="controls next">
+                            <a href="javascript:;">                            
+                                <img src='plugins/slick/carousel_right_white.png'/>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--
+        <div class="whats_new" style="background:url('img/whatsnew_bg_fullscreen.jpg') no-repeat;background-size:cover;">
+            <div class="container">
+                <div class="row">
+                    <h1>WHAT'S NEWS</h1>
                 </div>
                 <div class="whats_new_carousel row">
-                    <!-- Template -->
                     <div class="col-md-4 whatsnew_content">
-                        <div class="whats_news_image_wrapper">
                             <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img1.jpg' />
                             <span class="whatsnew_hover_content"><span></span></span>
-                        </div>
                         <div class="whatsnew_carousel_textarea clearfix">
                             <div class="whatsnew_carousel_title">
                                 THE MELBOURNE STAR EXPERIENCE
@@ -669,12 +780,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End of Template -->
                     <div class="col-md-4 whatsnew_content">
-                        <div class="whats_news_image_wrapper">
                             <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img2.jpg' />
                             <span class="whatsnew_hover_content"><span></span></span>
-                        </div>
                         <div class="whatsnew_carousel_textarea clearfix">
                             <div class="whatsnew_carousel_title">
                                 MELBOURNE STAR GOES PINK
@@ -687,10 +795,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 whatsnew_content">
-                        <div class="whats_news_image_wrapper">
                             <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img3.jpg' />
                             <span class="whatsnew_hover_content"><span></span></span>
-                        </div>
                         <div class="whatsnew_carousel_textarea clearfix">
                             <div class="whatsnew_carousel_title">
                                 MELBOURNE STAR ANNOUNCES ITS FIRST COMMUNITY PARTNER
@@ -703,10 +809,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 whatsnew_content">
-                        <div class="whats_news_image_wrapper">
                             <img class="whatsnew_carousel_img img-responsive" src = 'img/whatsnew_img2.jpg' />
                             <span class="whatsnew_hover_content"><span></span></span>
-                        </div>
                         <div class="whatsnew_carousel_textarea clearfix">
                             <div class="whatsnew_carousel_title">
                                 MELBOURNE STAR GOES PINK
@@ -718,15 +822,14 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- End of What's new -->
         <!-- Instagram-->
         <div class="instagram container">
             <div class="row">
-                <h1 class="instagram_title">INSTAGRAM</h1>
+                <h1>INSTAGRAM</h1>
                 <div class="instagram_subtitle">
                     @MELBOURNESTAR | #MELBOURNESTAR
                 </div>
@@ -736,12 +839,13 @@
             </div>
         </div>
         <!-- End of instagram-->
-        
+
         <!-- Js used only in home page -->
         <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
         <script type="text/javascript" src="js/project/carousel.js"></script>
+        <script type="text/javascript" src="js/project/whats_new.js"></script>
         <script type="text/javascript" src="js/project/hoverEffect.js"></script>
-                <script type="text/javascript" src="js/project/parallax_featured_scroll.js"></script>
+        <script type="text/javascript" src="js/project/parallax_featured_scroll.js"></script>
 
         <!--
         <script type="text/javascript" src="js/project/parallax_featured.js"></script>
@@ -750,8 +854,8 @@
         <script type="text/javascript" src="js/project/scroll_to_whatson.js"></script>
         <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
         <script type="text/javascript" src="js/project/instagram.js"></script>
-        
-        
+
+
         <!-- Subscribe -->
         <div class="subscribe full-width visible-lg">
             <div class="container">
@@ -803,40 +907,40 @@
             </div>
             <div class="full-width footer_wrapper clearfix">
                 <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 footer_col">
-                        <div class="footer_title">
-                            GETTING HERE
+                    <div class="row">
+                        <div class="col-sm-4 footer_col">
+                            <div class="footer_title">
+                                GETTING HERE
+                            </div>
+                            <div class="address">
+                                Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                            </div>
+                            <div class="direction">
+                                <a href="#">
+                                    <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
+                                </a>
+                            </div>
                         </div>
-                        <div class="address">
-                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                        <div class="col-sm-4 footer_col">
+                            <div class="footer_title">
+                                INSTAGRAM
+                            </div>
+                            <div id="instafeed2">
+                            </div>
                         </div>
-                        <div class="direction">
-                            <a href="#">
-                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 footer_col">
-                        <div class="footer_title">
-                            INSTAGRAM
-                        </div>
-                        <div id="instafeed2">
-                        </div>
-                    </div>
-                    <div class="col-sm-4 footer_col">
-                        <div class="footer_title">
-                            QUICK LINKS
-                        </div>
-                        <div class="footer_links">
-                            <div><a>Plan Your Visit</a></div>
-                            <div><a>Pricing &amp; Ticketing</a></div>
-                            <div><a>Buy Tickets</a></div>
-                            <div><a>Functions &amp; Events</a></div>
+                        <div class="col-sm-4 footer_col">
+                            <div class="footer_title">
+                                QUICK LINKS
+                            </div>
+                            <div class="footer_links">
+                                <div><a>Plan Your Visit</a></div>
+                                <div><a>Pricing &amp; Ticketing</a></div>
+                                <div><a>Buy Tickets</a></div>
+                                <div><a>Functions &amp; Events</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    </div>
             </div>
             <div class="container copyright_area">
                 <div class="row">
@@ -898,6 +1002,6 @@
         <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
         <script type="text/javascript" src="js/project/sitewide/custom_dropdown.js"></script>
         <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"></script>
-        
+
     </body>
 </html>

@@ -6,7 +6,7 @@ $(window).scroll(function(){
     if($(window).scrollTop() > star_point){
         sticky_element.addClass('stick');
         box.addClass("no-padding");
-        $("#navplacehoder").removeClass("hidden");
+        //$("#navplacehoder").removeClass("hidden");
         $("#book-ticket-button").addClass("hidden");
         if(!$("#book-ticket-area").hasClass("hidden")){
             $("#book-ticket-area").addClass("hidden");
@@ -16,7 +16,7 @@ $(window).scroll(function(){
         sticky_element.removeClass('stick');
         box.removeClass("no-padding");
         $("#book-ticket-button").removeClass("hidden");
-                $("#navplacehoder").addClass("hidden");
+                //$("#navplacehoder").addClass("hidden");
         $(".mask").removeClass("hidden");
 
     }
