@@ -34,7 +34,9 @@ body{
     }
     .box-center-container{
         width:100%;
+        @include transition(all 0.7s ease);
 
+        
     }
     &.right-side{
         padding-left:300px
@@ -69,7 +71,6 @@ body{
                         }
                     }
                 }
-                
             }
         }
         .right-bar{
@@ -90,4 +91,13 @@ body{
         padding:0;
     }
 }
+@media (min-width:$screen-sm-min) and (max-width:$screen-md-max){
+    .box-container{
+        .box-center-container.horrizontal-parallax-banner{
+            height:524px;
+        }
+    }
+}
+
+
 

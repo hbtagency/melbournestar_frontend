@@ -1,7 +1,11 @@
-
 @media (max-width: $screen-md-max) {    
     .main_nav {
         background-color:$nav_blue;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:100;
         .full-screen-container{
             padding-left:0;
             padding-right:0;
@@ -57,7 +61,7 @@
         &.stick{
             margin:0;
             padding:0;
-                    border-left:0 solid #fff;
+            border-left:0 solid #fff;
             border-right:0 solid #fff;
         }
         .full-screen-container{
@@ -73,6 +77,30 @@
                     height:30px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $screen-xxxs-max) {  
+    .main_nav{
+        .full-screen-container{
+            .logo{
+                margin-right:5px; 
+            }
+            .mobile-menu{
+                margin-left:0;
+                button.navbar-toggle{
+                    padding-left:0;
+                    margin-top:22px;
+                    .icon-bar{
+                        width:20px;
+                        height:3px;
+                        
+                    }
+                }
+            }
+            
+          
         }
     }
 }

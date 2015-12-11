@@ -1,7 +1,5 @@
 $footer_bottom_font_size: 13px;
 
-
-
 .footer_title{
 	font-size: 20px;
         font-weight: bold;
@@ -12,10 +10,8 @@ $footer_bottom_font_size: 13px;
 .lets_connect{
 	margin-top: 50px;
 	text-align: center;
-
 	.social_links{
 		position: relative;
-		right: 20px;
 		width: 400px;	
 		margin: 0 auto 50px auto;
 
@@ -74,18 +70,20 @@ $footer_bottom_font_size: 13px;
     }
 
     .footer_bottom_links{
-            display: inline-block;
+	    display: inline-block;
 
-            li{
-                    float: left;
-                    list-style: none;
-                    margin-left: 15px;
+	    li{
+	        float: left;
+	        list-style: none;
+	        margin-left: 15px;
 
-                    a{
-                            font-size: $footer_bottom_font_size;
-                            color: black;
-                            text-transform: uppercase;
-                    }
-            } 
+	    	a{
+		        font-size: $footer_bottom_font_size;
+		        color: black;
+	            text-transform: uppercase;
+	    	}
+    	}  
     }
 }
+
+@import "media_queries/__footer.scss";

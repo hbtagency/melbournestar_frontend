@@ -14,7 +14,29 @@
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
         <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
+        <script language="javascript">
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+            if (isSafari){
+                loadjscssfile("css/final/safari.css", "css") ////dynamically load and add this .css file
+            }
 
+            function loadjscssfile(filename, filetype){
+                /*if (filetype==="js"){ //if filename is a external JavaScript file
+                    var fileref=document.createElement('script');
+                    fileref.setAttribute("type","text/javascript");
+                    fileref.setAttribute("src", filename);
+                }
+                else */
+                if (filetype==="css"){ //if filename is an external CSS file
+                    var fileref=document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", filename);
+                }
+                if (typeof fileref!=="undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
+        </script>
     </head>
 
     <body>
@@ -174,7 +196,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;background-position: 50% 50%;">
+                <div class="box-center-container clearfix right-side parallax-banner" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -422,7 +444,7 @@
                                     </div>
                                     <div class="sit_bottom_container clearfix">
                                         <div class="ticket_pricing_button_div ">
-                                            <a class="ticket_pricing_button button" href='#'>ticket & priceing</a>
+                                            <a class="ticket_pricing_button button" href='#'>ticket & pricing</a>
                                         </div>
                                         <a class="view-cart">
                                             View cart
@@ -498,6 +520,9 @@
                         </div>
                     </div>
                     <!-- End of Main Nav -->
+                    <div id="navplacehoder" class="navplacehoder hidden">
+                        
+                    </div>
                     <!-- Banner area -->
                     <div class="banner_area">
                         <div class="mask"></div>
@@ -550,7 +575,7 @@
                         <li>Fir 9am - 9pm</li>
                     </ul>
                 </div>
-                <div class="right col-md-5 col-xs-12">
+                <div class="right col-md-5 col-xs-12 hidden-xs">
                     <div class="book-your-ticket">
                     <h1>Book your tickets</h1>
                     <div class="book-ticket-area " id="book-ticket-area2">
@@ -759,6 +784,9 @@
         </div>
         <!-- end of template content --> 
         
+        <!-- Js used only in ticket page -->
+        <script type="text/javascript" src="js/project/striped_table.js"></script>
+        
         <!-- Subscribe -->
         <div class="subscribe full-width visible-lg">
             <div class="container">
@@ -791,7 +819,6 @@
         <!-- End of Subscribe -->
         
         
-        <!-- End of Subscribe -->
         <footer>
             <div class="container">
                 <div class="lets_connect row">
@@ -809,7 +836,7 @@
             <div class="full-width footer_wrapper clearfix">
                 <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_col">
                         <div class="footer_title">
                             GETTING HERE
                         </div>
@@ -822,14 +849,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_col">
                         <div class="footer_title">
                             INSTAGRAM
                         </div>
                         <div id="instafeed2">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 footer_col">
                         <div class="footer_title">
                             QUICK LINKS
                         </div>
@@ -845,7 +872,7 @@
             </div>
             <div class="container copyright_area">
                 <div class="row">
-                    <div class="footer_bottom pull-left inline-block">
+                    <div class="footer_bottom_left inline-block">
                         &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
                     </div>
                     <div class="pull-right inline-block visible-lg">
@@ -886,21 +913,18 @@
             </div>
         </footer>
 
-        <!-- Js used only in home page -->
-        <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/project/carousel.js"></script>
-        <script type="text/javascript" src="js/project/hoverEffect.js"></script>
-        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
-        <script type="text/javascript" src="js/project/striped_table.js"></script>
+
         <script type="text/javascript">
             $( function() {
                 $( '#cd-dropdown' ).dropdown();
             });
         </script>
+        
+
         <!-- instafeed -->
         <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"></script>
         <script type="text/javascript" src="js/project/instagram2.js"></script>
+
 
         <!-- The following js files has been used site widely -->
         <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
@@ -910,7 +934,13 @@
         <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
         <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
         <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
-
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/custom_dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"></script>
+        
+        
+        
+        
 
     </body>
 </html>

@@ -14,7 +14,29 @@
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
         <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
+        <script language="javascript">
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+            if (isSafari){
+                loadjscssfile("css/final/safari.css", "css") ////dynamically load and add this .css file
+            }
 
+            function loadjscssfile(filename, filetype){
+                /*if (filetype==="js"){ //if filename is a external JavaScript file
+                    var fileref=document.createElement('script');
+                    fileref.setAttribute("type","text/javascript");
+                    fileref.setAttribute("src", filename);
+                }
+                else */
+                if (filetype==="css"){ //if filename is an external CSS file
+                    var fileref=document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", filename);
+                }
+                if (typeof fileref!=="undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
+        </script>
     </head>
 
     <body>
@@ -174,7 +196,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;background-position: 50% 50%;">
+                <div class="box-center-container clearfix right-side parallax-banner" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -280,8 +302,8 @@
                                 <span class="uppercase">Buy Ticket</span>
                                 <!-- Put buy ticket div in here but use absolute position -->
                                 <a class="book-ticket-button" id="book-ticket-button"/>
-                                    BOOK YOUR TICKETS
-                                    <img id="rotate" class="img-responsive" src="img/plus.png"/>
+                                BOOK YOUR TICKETS
+                                <img id="rotate" class="img-responsive" src="img/plus.png"/>
                                 </a>
                                 <!-- book-ticket-area-->
                                 <div class="book-ticket-area hidden" id="book-ticket-area">
@@ -498,8 +520,11 @@
                         </div>
                     </div>
                     <!-- End of Main Nav -->
+                    <div id="navplacehoder" class="navplacehoder hidden">
+                        
+                    </div>
                     <!-- Banner area -->
-                    <div class="banner_area">
+                    <div class="banner_area mgb70">
                         <div class="mask"></div>
                         <div class="banner-heading sit_left clearfix">
                             <h1>
@@ -507,56 +532,221 @@
                             </h1>
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                         </div>
+                        <!-- Sticky Menu 2 -->
+                        <div class="sticky_menu_2 visible-lg">
+                            <div class="container">
+                                <nav class="navbar inline-block pull-center visible-lg" id="main_nav">
+                                    <ul class="nav navbar-nav level-1">
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">HOLDING EVENTS AT THE STAR</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">CORPORATE OPTIONS</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">PETER ROWLAND CATERING</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">FOR THAT SPECIAL OCCASION</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">ENQUIRY</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- End of Sticky Menu 2 -->
                     </div>
                     <!-- End of Banner -->
+
                 </div>
                 <div class="right-bar box-sidebar pull-right"></div>
             </div>
         </header>
 
-        <div class="container template_content two_column">
+        <div class="container template_content two_column_posts">
             <div class="row">
-                <div class="col-sm-1 hidden-xs"></div>
-                <div class="col-sm-5 col-xs-12">
+                <div class="col-lg-1 visible-lg"></div>
+                <div class="col-sm-6 col-lg-5 col-xs-12">
                     <div class="post_list_item">
-                        <img src="" class="img-responsive"/>
+                        <img src="img/post_sample1.jpg" class="img-responsive"/>
                         <h1>Holding events at the star</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
+                        <a class="button button-black read_more" href="#">
+                            read more
+                        </a>
                     </div>
                 </div>
-                <div class="col-sm-5 col-xs-12">
+                <div class="col-sm-6 col-lg-5 col-xs-12">
                     <div class="post_list_item">
-                        <img src="" class="img-responsive"/>
+                        <img src="img/post_sample2.jpg" class="img-responsive"/>
                         <h1>Holding events at the star</h1>
                         <p>
                             <b>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
                             </b>
                         </p>
                         <p>
-                            
                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-                        <a class="button button-black" href="#">
+                        <a class="button button-black read_more" href="#">
                             read more
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="row divider">
+                <div class="col-lg-1 visible-lg">
+                </div>
+                <div class="col-xs-12 col-lg-10">
+                    <hr>
+                </div>
+            </div>
         </div>
 
-        
+        <div class="container template_content">
+            <div class="row">
+                <div class="col-lg-1 visible-lg">
+                </div>
+                <div class="col-xs-12 col-lg-10">
+                    <div class="heading"></div>
+                    <h1>VENUES</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 visible-lg">
+                </div>
+                <div class="col-xs-12 col-lg-10 three-column-container">
+                    <div class="post_list_item col-lg-4 col-sm-6 col-xs-12">
+                        <img src="img/post_sample2.jpg" class="img-responsive"/>
+                        <h2>Holding events at the star</h2>
+                        <p>
+                            <b>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                            </b>
+                        </p>
+                        <p>
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="learn_more" href="#">
+                            lear more
+                        </a>
+                    </div>
+
+                    <div class="post_list_item col-lg-4 col-sm-6 col-xs-12">
+                        <img src="img/post_sample2.jpg" class="img-responsive"/>
+                        <h2>Holding events at the star</h2>
+                        <p>
+                            <b>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                            </b>
+                        </p>
+                        <p>
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="learn_more" href="#">
+                            lear more
+                        </a>
+                    </div>
+                    <div class="post_list_item col-lg-4 col-sm-6 col-xs-12">
+                        <img src="img/post_sample2.jpg" class="img-responsive"/>
+                        <h2>Holding events at the star</h2>
+                        <p>
+                            <b>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                            </b>
+                        </p>
+                        <p>
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="learn_more" href="#">
+                            lear more
+                        </a>
+                    </div>
+                    <div class="post_list_item col-lg-4 col-sm-6 col-xs-12">
+                        <img src="img/post_sample2.jpg" class="img-responsive"/>
+                        <h2>Holding events at the star</h2>
+                        <p>
+                            <b>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.  
+                            </b>
+                        </p>
+                        <p>
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="learn_more" href="#">
+                            lear more
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Js used only in current page -->
+        <script type="text/javascript" src="js/project/stickyMenu2.js"></script>
+
         <!-- Subscribe -->
         <div class="subscribe full-width visible-lg">
             <div class="container">
@@ -586,9 +776,7 @@
                 </div>
             </div>
         </div>
-        <!-- End of Subscribe -->
-        
-        
+
         <!-- End of Subscribe -->
         <footer>
             <div class="container">
@@ -606,44 +794,44 @@
             </div>
             <div class="full-width footer_wrapper clearfix">
                 <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            GETTING HERE
+                    <div class="row">
+                        <div class="col-md-4 footer_col">
+                            <div class="footer_title">
+                                GETTING HERE
+                            </div>
+                            <div class="address">
+                                Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                            </div>
+                            <div class="direction">
+                                <a href="#">
+                                    <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
+                                </a>
+                            </div>
                         </div>
-                        <div class="address">
-                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                        <div class="col-md-4 footer_col">
+                            <div class="footer_title">
+                                INSTAGRAM
+                            </div>
+                            <div id="instafeed2">
+                            </div>
                         </div>
-                        <div class="direction">
-                            <a href="#">
-                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            INSTAGRAM
-                        </div>
-                        <div id="instafeed2">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            QUICK LINKS
-                        </div>
-                        <div class="footer_links">
-                            <div><a>Plan Your Visit</a></div>
-                            <div><a>Pricing &amp; Ticketing</a></div>
-                            <div><a>Buy Tickets</a></div>
-                            <div><a>Functions &amp; Events</a></div>
+                        <div class="col-md-4 footer_col">
+                            <div class="footer_title">
+                                QUICK LINKS
+                            </div>
+                            <div class="footer_links">
+                                <div><a>Plan Your Visit</a></div>
+                                <div><a>Pricing &amp; Ticketing</a></div>
+                                <div><a>Buy Tickets</a></div>
+                                <div><a>Functions &amp; Events</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    </div>
             </div>
             <div class="container copyright_area">
                 <div class="row">
-                    <div class="footer_bottom pull-left inline-block">
+                    <div class="footer_bottom_left inline-block">
                         &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
                     </div>
                     <div class="pull-right inline-block visible-lg">
@@ -684,18 +872,7 @@
             </div>
         </footer>
 
-        <!-- Js used only in home page -->
-        <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/project/carousel.js"></script>
-        <script type="text/javascript" src="js/project/hoverEffect.js"></script>
-        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
-        <script type="text/javascript" src="js/project/striped_table.js"></script>
-        <script type="text/javascript">
-            $( function() {
-                $( '#cd-dropdown' ).dropdown();
-            });
-        </script>
+
         <!-- instafeed -->
         <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"></script>
         <script type="text/javascript" src="js/project/instagram2.js"></script>
@@ -708,7 +885,8 @@
         <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
         <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
         <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
-
-
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/custom_dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"></script>
     </body>
 </html>

@@ -17,7 +17,6 @@ hover_element2.mouseleave(function(){
         window.setTimeout( function () { 
             rotate2.removeClass('over');
             lock = false;
-        }, 38000 );
-        
+        }, 19000 );
     }
 });

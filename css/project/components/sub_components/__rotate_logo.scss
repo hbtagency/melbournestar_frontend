@@ -1,11 +1,16 @@
-$rotation_time:38000ms;
+$rotation_time:19000ms;
 
 .rotating_logo_div{
     width:265px !important;
     .rotate_logo{
+        &:hover{
+            text-decoration: none;
+        }
         .over{
-            transform: rotate( 1440deg );            
-            transition: transform $rotation_time ease;
+            transform: rotate( 360deg );            
+            transition: transform $rotation_time linear;
+            -webkit-transform: rotate( 360deg );     
+            -webkit-transition: transform $rotation_time linear;
         }
     img{
         float:left;

@@ -21,7 +21,6 @@
         <header>
             <div id="body-mask" class="body-mask">
             </div>
-
             <!-- Mobile Menu -->
             <div class="mobile-menu-sidebar hidden-lg clearfix" id="leftMobileMenu">
                 <a id="close-mobile" href="#">
@@ -175,7 +174,7 @@
                     -->
                     <!--<a class="view-more-text">More</a>-->
                 </div>
-                <div class="box-center-container clearfix right-side" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;background-position: 50% 50%;">
+                <div class="box-center-container clearfix right-side parallax-banner" style="background:url('img/banner1.jpg') no-repeat;background-size:cover;background-position: 50% 50%;">
                     <!-- Top Nav -->
                     <div class="top_nav">
                         <div class="full-screen-container visible-lg">
@@ -247,6 +246,12 @@
                         <div class="full-screen-container">
                             <!-- Mobile Menu Component -->
                             <div class="mobile-menu hidden-lg">
+                                <!--
+                                <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left pull-right visible-lg">
+                                  <span class="lines"></span>
+                                </button>-->
+
+
                                 <button type="button" class="navbar-toggle collapsed pull-left lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -279,7 +284,7 @@
                                 <img id="rotate" class="img-responsive" src="img/plus.png"/>
                                 </a>
                                 <!-- book-ticket-area-->
-                                <div class="book-ticket-area" id="book-ticket-area">
+                                <div class="book-ticket-area hidden" id="book-ticket-area">
                                     <div class="accordion">
                                         <div class="accordion-group">
                                             <div class="accordion-heading main_heading">
@@ -490,13 +495,14 @@
                                     </li>
                                 </ul>
                             </nav>
-
-
                         </div>
                     </div>
                     <!-- End of Main Nav -->
+                    <div id="navplacehoder" class="navplacehoder hidden-xs hidden-sm hidden-md hidden">
+                        
+                    </div>
                     <!-- Banner area -->
-                    <div class="banner_area">
+                    <div class="banner_area mgb70">
                         <div class="mask"></div>
                         <div class="banner-heading sit_left clearfix">
                             <h1>
@@ -504,170 +510,70 @@
                             </h1>
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                         </div>
+                        <!-- Sticky Menu 2 -->
+                        <div class="sticky_menu_2">
+                            <div class="container">
+                                <nav class="navbar inline-block pull-center visible-lg" id="main_nav">
+                                    <ul class="nav navbar-nav level-1">
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">HOLDING EVENTS AT THE STAR</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">CORPORATE OPTIONS</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">PETER ROWLAND CATERING</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+
+                                            </a>
+                                        </li>
+                                        <li class="root nav_margin_right">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">FOR THAT SPECIAL OCCASION</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                        <li class="root">
+                                            <!-- Link tag only if link is present in backend -->
+                                            <a class="dropdown-toggle menu--link" href="#">
+                                                <!-- END IF -->
+                                                <span class="menu--link-text current-parent">ENQUIRY</span>
+                                                <!-- Control to use: -->
+                                                <i class="icon menu--icon "></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- End of Sticky Menu 2 -->
                     </div>
                     <!-- End of Banner -->
+
                 </div>
                 <div class="right-bar box-sidebar pull-right"></div>
             </div>
         </header>
 
-      
-                <!-- Subscribe -->
-        <div class="subscribe full-width visible-lg">
-            <div class="container">
-                <div class="row">
-                    <div class="subscribe_title">
-                        RECEIVE OFFERS AND NEWS DIRECT TO YOUR INBOX
-                    </div>
-                </div>
-                <div class="row subscribe_form">
-                    <div class="interst inline-block">
-                        <!-- <select>
-                            <option value="interests">INTERESTS</option>
-                            <option value="test">TEST</option>
-                        </select> -->
-                        <select id="cd-dropdown" class="cd-select">
-                            <option value="-1" selected>INTERESTS</option>
-                            <option value="1" >SPORT</option>
-                            <option value="2" >GAME</option>
-                            <option value="3" >TV</option>
-                            <option value="4" >OTHERS</option>
-                        </select>
-                    </div>
-                    <div class="fluid_container inline-block">
-                        <input type="text" class="inline-block" placeholder="FIRST NAME*"/>
-                        <input type="text" class="inline-block" placeholder="LAST NAME*"/>
-                        <input type="text" class="inline-block" placeholder="EMAIL ADDRESS*"/>
-                    </div>
-                    <div class="join_button inline-block">
-                        <button><a href="#">JOIN</a></button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End of Subscribe -->
-        
-        
-        <!-- End of Subscribe -->
-        <footer>
-            <div class="container">
-                <div class="lets_connect row">
-                    <div class="footer_title">
-                        LET'S CONNECT
-                    </div>
-                    <div class="social_links">
-                        <span><a href="#"><img src="img/tripadvisor_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/instagram_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/youtube_icon.jpg" /></a></span>
-                        <span><a href="#"><img src="img/facebook_icon.jpg" /></a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="full-width footer_wrapper clearfix">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            GETTING HERE
-                        </div>
-                        <div class="address">
-                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
-                        </div>
-                        <div class="direction">
-                            <a href="#">
-                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            INSTAGRAM
-                        </div>
-                        <div id="instafeed2">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="footer_title">
-                            QUICK LINKS
-                        </div>
-                        <div class="footer_links">
-                            <div><a>Plan Your Visit</a></div>
-                            <div><a>Pricing &amp; Ticketing</a></div>
-                            <div><a>Buy Tickets</a></div>
-                            <div><a>Functions &amp; Events</a></div>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-            </div>
-            <div class="container copyright_area">
-                <div class="row">
-                    <div class="footer_bottom pull-left inline-block">
-                        &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
-                    </div>
-                    <div class="pull-right inline-block visible-lg">
-                        <ul class="footer_bottom_links">
-                            <li class="root inline-block">
-                                <a href="#" class="inline-block " >
-                                    Terms &amp; Conditions
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Disclaimer
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    about us
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    Sitemap
-                                </a>
-                            </li>
-                            <li class="root">
-                                <a href="#" class="inline-block " >
-                                    contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Js used only in home page -->
-        <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-        <script type="text/javascript" src="js/project/carousel.js"></script>
-        <script type="text/javascript" src="js/project/hoverEffect.js"></script>
-        <script type="text/javascript" src="js/project/parallax_featured.js"></script>
-        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js">
-        </script>
-        <script type="text/javascript">
-            $( function() {
-                $( '#cd-dropdown' ).dropdown();
-            });
-        </script>
-        <!-- instafeed -->
-        <!--
-        <script type="text/javascript" src="plugins/instafeed/instafeed.min.js"></script>
-        <script type="text/javascript" src="js/project/instagram.js"></script>-->
-
-        <!-- The following js files has been used site widely -->
-        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
-
-    </body>
-</html>
+                       
+<!-- In clude and stick button 2 js-->
+<script type="text/javascript" src="js/project/stickyMenu2.js"></script>

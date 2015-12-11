@@ -6,7 +6,9 @@ $ticket_container_width:177px;
     height:95px;
     background-color:$nav_blue_transparent;
     text-transform:uppercase;
-    
+    &.home_nav{
+        background-color:$nav_blue;
+    }
     
     &.stick{
         position:fixed;
@@ -14,7 +16,7 @@ $ticket_container_width:177px;
         display:block;
         width:100%;
         margin:0;
-        z-index: 1000;
+        z-index: 98;
         padding-right:15px;
         margin-left:-30px;
         border-left:30px solid #fff;
