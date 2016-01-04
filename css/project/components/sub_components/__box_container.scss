@@ -21,6 +21,9 @@ body{
                 margin-top:$top_nav_height;
             }
         }
+        &.extra-padding-left{
+            padding-left:62px;
+        }
     }
     
     .right-bar{
@@ -32,12 +35,11 @@ body{
         width:55px;
         display:block;
     }
+    
     .box-center-container{
-        width:100%;
-        @include transition(all 0.7s ease);
-
-        
+        width:100%;      
     }
+    
     &.right-side{
         padding-left:300px
     }

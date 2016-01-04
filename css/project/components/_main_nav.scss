@@ -1,7 +1,5 @@
 $ticket_container_width:177px;
 
-
-
 .main_nav{
     height:95px;
     background-color:$nav_blue_transparent;
@@ -16,7 +14,7 @@ $ticket_container_width:177px;
         display:block;
         width:100%;
         margin:0;
-        z-index: 98;
+        z-index: 99;
         padding-right:15px;
         margin-left:-30px;
         border-left:30px solid #fff;
@@ -26,6 +24,7 @@ $ticket_container_width:177px;
             background-color:#fff;
         }
     }
+    
     .full-screen-container{
         padding-right:$ticket_container_width;
         height:95px;
@@ -49,13 +48,12 @@ $ticket_container_width:177px;
         nav.navbar{
             margin-bottom:0px;
             border:none;
-
             ul
                 li.root{
                     min-width:150px;
                     a{
                         height:94px;
-                        padding-top:35px;
+                        padding-top:40px;
                         text-align: center;
                         @include transition(all 0.4s ease);
                         color:#fff;
@@ -69,6 +67,10 @@ $ticket_container_width:177px;
                         &:active{
                             background-color:$head_blue;
                         }
+                        &:focus{
+                            background-color:$head_blue;
+                        }
+                        
                         text-align:center;
                         .arrow_down{
                             background:url('../../../img/blue_arrow_down.png');
@@ -86,9 +88,11 @@ $ticket_container_width:177px;
                     
 
                     .dropdown-menu{
-                        background-color:rgba(0,0,0,0.6);
+                        background-color:rgba(0, 42, 95, 0.8);
                         right:0;
-                        left:auto;
+                        left:auto; 
+                                                z-index:101;
+
                     }
                     .level-2{
                         padding:0;
@@ -113,6 +117,7 @@ $ticket_container_width:177px;
         .dropdown-menu li a:hover{
             background: black !important;
         }
+        
 }
 
 

@@ -1,5 +1,15 @@
 
+@media (min-width:$screen-lg-min){
+    .featured-home{
 
+        .banner-text{
+            width:625px;
+            padding-left:50px;
+            padding-right:50px;
+        }
+
+    } 
+}
 
 @media (min-width:$screen-lg-min) and (max-width: $screen-lg-max) {
     .featured-home{
