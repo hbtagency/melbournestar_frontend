@@ -7,6 +7,8 @@ if(width < 992){
 	//Update what's new overlay height
 	var img_height = $('.whatsnew_carousel_img').height() + 1;
 	var img_width = $('.whatsnew_carousel_img').width() + 1;
+	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+	
         if(isSafari){
             if(width > 420){
             $('.whatsnew_hover_content').css('height',$(".whats_news_image_wrapper img.img-responsive").first().height()+30);
