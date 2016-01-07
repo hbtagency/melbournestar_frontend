@@ -16,23 +16,36 @@
         .whats_news_image_wrapper{
             height: auto !important;
         }
-        .whatsnew_content{
-            .whatsnew_hover_content{
-                height: calc(100% - 11px);	
-            }
+
+                .whatsnew_content{
+
             .whatsnew_play_button{
                 display: block;
             }
+
+            //Chrome
+            // .whatsnew_hover_content {
+            //     height: calc(100%);
+            //     width: calc(100% - 30px);
+            //     top: 0;
+            // }
+
+            //Safari
             .whatsnew_hover_content {
-                width: calc(100% - 30px);
+                height: calc(100%);
+                width: calc(100% - 0px);
                 top: 0;
             }
+
             &:hover{
                 span.whatsnew_hover_content{
                     height: 100%;	
                 }
             }
         }
+        
+
+
         .whatsnew_carousel_img{
             width: 100%;
         }
