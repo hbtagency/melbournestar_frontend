@@ -10,11 +10,12 @@ if(width < 992){
 	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
 	
         if(isSafari){
-            if(width > 420){
-            $('.whatsnew_hover_content').css('height',$(".whats_news_image_wrapper img.img-responsive").first().height()+30);
-            }else{
-                $('.whatsnew_hover_content').css('height',$(".whats_news_image_wrapper img.img-responsive").first().height());
-            }
+            // if(width > 420){
+            // $('.whatsnew_hover_content').css('height',$(".whats_news_image_wrapper img.img-responsive").first().height()+30);
+            // }else{
+            //     $('.whatsnew_hover_content').css('height',$(".whats_news_image_wrapper img.img-responsive").first().height());
+            // }
+            $('.whatsnew_hover_content').css('height',img_height);
 
         }else{
             $('.whatsnew_hover_content').css('height',img_height);
@@ -22,7 +23,7 @@ if(width < 992){
         }
   
 	$('.whatsnew_hover_content').css('width',img_width);
-	$('.whatsnew_content').css('height',img_height+30);
+	// $('.whatsnew_content').css('height',img_height+30);
 	
 }
 else{
