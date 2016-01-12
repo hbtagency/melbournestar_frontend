@@ -11,7 +11,7 @@ gulp.task('default', function() {
         
         //change proxy server to your localhost
         //proxy: "http://localhost:3000/melbournestar_frontend/new-home.html",
-        proxy: "http://localhost:80/melStar/melbournestar_frontend/home.html",
+        proxy: "http://localhost:80/MEL_STAR/melbournestar_frontend/post.html",
 
     });
 
