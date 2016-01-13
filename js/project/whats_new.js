@@ -5,7 +5,6 @@ $(window).load(function(){
     }
 });
 
-
 $(document).ready(function(){
     if(isSafari === false){
         responsiveCarousel();
