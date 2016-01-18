@@ -1,0 +1,613 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Official Melbourne Star Observation Wheel Website. Book your tickets online and experience one of the world's largest observation wheels.">
+        <meta name="keywords" content="melbournestar, melbourne star, observation wheel, ferris wheel, tourism, tourist attaction, melbourne tourism, australia tourism, dockland tourism ">
+        <meta name="author" content="HBT">
+        <title> Home | Melbourne Star </title>
+        <link rel="stylesheet" href="css/final/style.css"/>
+
+        <!-- JS init -->
+        <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+        <script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
+        <script language="javascript">
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+            if (isSafari){
+                loadjscssfile("css/final/safari.css", "css") ////dynamically load and add this .css file
+            }
+
+            function loadjscssfile(filename, filetype){
+                /*if (filetype==="js"){ //if filename is a external JavaScript file
+                    var fileref=document.createElement('script');
+                    fileref.setAttribute("type","text/javascript");
+                    fileref.setAttribute("src", filename);
+                }
+                else */
+                if (filetype==="css"){ //if filename is an external CSS file
+                    var fileref=document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", filename);
+                }
+                if (typeof fileref!=="undefined")
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div id="body-mask" class="body-mask">
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu-sidebar hidden-lg clearfix" id="leftMobileMenu">
+                <a id="close-mobile" href="#">
+                    <img class="pull-right img-responsive" src="img/close.png"/>
+                </a>
+                <div class="accordion">
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Main one
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading collapsed_item">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseMainTwo">
+                                <i class="icon-list-alt"></i> Main two
+                            </a>
+                        </div>
+
+                        <div id="collapseMainTwo" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href='#'>This is one</a></li>
+                                    <li><a href='#'>This is two</a></li>
+                                    <li><a href='#'>This is three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group hidden-lg">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Main three
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th"></i> Layout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-th-list"></i> UI Components
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading collapsed_item">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#cf">
+                                <i class="icon-list-alt"></i> Forms
+                            </a>
+                        </div>
+
+                        <div id="cf" class="accordion-body collapse" style="height: 0px; ">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li><a href='#'>This is one</a></li>
+                                    <li><a href='#'>This is two</a></li>
+                                    <li><a href='#'>This is three</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-cog"></i> Plugins
+                            </a>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                <i class="icon-file"></i> Templates
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-container clearfix" id="box-container" >
+                <div class="left-bar box-sidebar pull-left" id="left-bar">
+                    <!-- More Menu Component -->
+                    <button type="button" role="button" id="view_more_button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left visible-lg">
+                        <span class="lines"></span>
+                    </button>
+
+                    <div class="accordion" id="leftMenu">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                    <i class="icon-th"></i> Layout
+                                </a>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                    <i class="icon-th-list"></i> UI Components
+                                </a>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading collapsed_item">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                                    <i class="icon-list-alt"></i> Forms
+                                </a>
+                            </div>
+
+                            <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                                <div class="accordion-inner">
+                                    <ul>
+                                        <li><a href='#'>This is one</a></li>
+                                        <li><a href='#'>This is two</a></li>
+                                        <li><a href='#'>This is three</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                    <i class="icon-cog"></i> Plugins
+                                </a>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                                    <i class="icon-file"></i> Templates
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End of Mobile Menu Component -->
+
+                    <!--
+                    <button type="button" class="navbar-toggle collapsed pull-right lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    -->
+                    <!--<a class="view-more-text">More</a>-->
+                </div>
+                <div class="box-center-container clearfix right-side parallax-banner" style="background:url('img/post_banner.jpg') no-repeat;background-size:cover;">
+                    <!-- Top Nav -->
+                    <div class="top_nav">
+                        <div class="full-screen-container visible-lg">
+                            <!-- Search component -->
+                            <div class="search inline-block">
+                                <ul class="nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle inline-block search_button" data-toggle="dropdown">
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="navbar--list-item">
+                                                <form action="#" method="post">
+                                                    <input type="text" value="" placeholder="Enter key words ..." />
+                                                    <a href="#" class="submit search_button pull-right">
+                                                    </a>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End of search component -->
+
+                            <!-- Language component -->
+                            <div class="language inline-block">
+                                <ul class="nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle inline-block" data-toggle="dropdown">
+                                            <img src="img/ausflag.jpg" alt="$alt" class="center block "/>
+                                            <span class="block text">AUS</span>
+                                            <img src="img/arrow_down.jpg" class="center block"/>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="navbar--list-item">
+                                                <a class="menu--link" href="#">
+                                                    <img src="img/ausflag.jpg" alt="$alt" />
+                                                    <span>English</span>
+                                                </a>
+                                            </li>
+                                            <li class="navbar--list-item">
+                                                <a class="menu--link" href="#">
+                                                    <img src="img/cnflag.jpg" alt="$alt" />
+                                                    <span>Chinese</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Language component -->
+
+
+                            <nav class="navbar inline-block contact-us">
+                                <ul class="nav navbar-nav level-1">
+                                    <li class="root">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a href="$link">
+                                            <!-- END IF -->
+                                            <span class="menu--link-text current-parent">Contact Us</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- End of Top Nav -->
+                    <!-- Main Nav -->
+                    <div class="main_nav clearfix" id="main_navigation">
+                        <div class="full-screen-container">
+                            <!-- Mobile Menu Component -->
+                            <div class="mobile-menu hidden-lg">
+                                <!--
+                                <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button arrow arrow-left pull-right visible-lg">
+                                  <span class="lines"></span>
+                                </button>-->
+
+
+                                <button type="button" class="navbar-toggle collapsed pull-left lines-button arrow-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="nav-button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- logo -->
+                            <div class="rotating_logo_div logo left visible-lg">
+                                <a href="home.html" class="rotate_logo clearfix" id="rotate_logo_trigger">
+                                    <img src="img/wheel.png" id="rotate_logo"/>
+                                    <div class="logo_text">
+                                        <span class="white">Melbourne</span>
+                                        <span class="green">Star</span>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="logo inline-block left hidden-lg" id="logo">
+                                <a href="#" class="logo_span"></a>
+                            </div>
+
+                            <!-- ticket -->
+                            <div class="buy_tickets inline-block right visible-lg">
+                                <span class="uppercase"><a href="https://online.melbournestar.com/e-commerce/">Buy Ticket</a></span>
+                                <!-- Put buy ticket div in here but use absolute position -->
+
+
+                            </div>
+                            <!-- main navbar -->
+                            <nav class="navbar inline-block pull-right visible-lg" id="main_nav">
+                                <ul class="nav navbar-nav level-1">
+                                    <li class="root">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="ticket_pricing.html">
+                                            <!-- END IF -->
+                                            <span class="menu--link-text current-parent">ticket & pricing</span>
+                                            <!-- Control to use: -->
+                                            <i class="icon menu--icon "></i>
+
+                                        </a>
+                                    </li>
+                                    <li class="root">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="news_events.html">
+                                            <!-- END IF -->
+                                            <span class="menu--link-text current-parent">news & events</span>
+                                            <!-- Control to use: -->
+                                            <i class="icon menu--icon "></i>
+                                        </a>
+                                    </li>
+                                    <li class="root">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a class="dropdown-toggle menu--link" href="function.html">
+                                            <!-- END IF -->
+                                            <span class="menu--link-text current-parent">functions & catering</span>
+                                            <!-- Control to use: -->
+                                            <i class="icon menu--icon "></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="root dropdown">
+                                        <!-- Link tag only if link is present in backend -->
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <span class="menu--link-text current-parent">Dropdown Sample</span>
+                                            <span class="arrow_down"></span>
+                                        </a>
+                                        <!-- Second level Nav Item -->
+                                        <ul class="dropdown-menu level-2">
+                                            <li class="">
+                                                <a class="" href="#">
+                                                    <span class="">This is a very long sample name</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#">
+                                                    <span class="">Sample</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- End of Main Nav -->
+                    <div id="navplacehoder" class="navplacehoder hidden">
+
+                    </div>
+                    <!-- Banner area -->
+                    <div class="banner_area">
+                        <div class="mask"></div>
+                        <div class="banner-heading sit_left clearfix">
+                            <h1>
+                                Frequently Asked Questions
+                            </h1>
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        </div>
+                    </div>
+                    <!-- End of Banner -->
+                </div>
+                <div class="right-bar box-sidebar pull-right"></div>
+            </div>
+        </header>
+
+
+
+        <!-- template content area -->
+        <div class="container text-center clearfix">
+            
+     
+        <div class="faq_container clearfix">
+            <div class="accordion">
+            <div class="accordion-group">
+                <div class="accordion-heading collapsed_item">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#faq_sec1">
+                        <i class="icon-list-alt"></i> When is the last flight departure?
+                    </a>
+                </div>
+                <div id="faq_sec1" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <p>Melbourne Star's last flight departs nightly at 9.30pm.  You must have purchased your ticket prior to 9.15pm 
+                            for the final flight. Please ensure you have had your ticket validated on Level 2 and made your way through 
+                            the Tales of Melbourne by 9.25pm to board the last flight.  Tickets can continue to be purchased for future dates until the Star closes at 10pm.   
+                            For more information on our hours of operation and ticket prices please visit Plan Your Visit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-group">
+                <div class="accordion-heading collapsed_item">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#faq_sec2">
+                        <i class="icon-list-alt"></i> When is the last flight departure?
+                    </a>
+                </div>
+                <div id="faq_sec2" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <p>Melbourne Star's last flight departs nightly at 9.30pm.  You must have purchased your ticket prior to 9.15pm 
+                            for the final flight. Please ensure you have had your ticket validated on Level 2 and made your way through 
+                            the Tales of Melbourne by 9.25pm to board the last flight.  Tickets can continue to be purchased for future dates until the Star closes at 10pm.   
+                            For more information on our hours of operation and ticket prices please visit Plan Your Visit.</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="accordion-group">
+                <div class="accordion-heading collapsed_item">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#faq_sec3">
+                        <i class="icon-list-alt"></i> When is the last flight departure?
+                    </a>
+                </div>
+                <div id="faq_sec3" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <p>Melbourne Star's last flight departs nightly at 9.30pm.  You must have purchased your ticket prior to 9.15pm 
+                            for the final flight. Please ensure you have had your ticket validated on Level 2 and made your way through 
+                            the Tales of Melbourne by 9.25pm to board the last flight.  Tickets can continue to be purchased for future dates until the Star closes at 10pm.   
+                            For more information on our hours of operation and ticket prices please visit Plan Your Visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                      
+            
+        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div> 
+        <!-- end of template content -->
+
+        <!-- Js used only in post page -->
+        <script type="text/javascript" src="js/project/striped_table.js"></script>
+        <script type="text/javascript" src="js/project/banner_mask_height_init.js"></script>
+
+        <!-- Subscribe -->
+        <div class="subscribe full-width visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="subscribe_title">
+                        RECEIVE OFFERS AND NEWS DIRECT TO YOUR INBOX
+                    </div>
+                </div>
+                <div class="row subscribe_form">
+                    <div class="interst inline-block">
+                        <select id="cd-dropdown" class="cd-select">
+                            <option value="-1" selected>OPTIONS</option>
+                            <option value="1" >SAMPLE1</option>
+                            <option value="2" >SAMPLE2</option>
+                            <option value="3" >SAMPLE3</option>
+                            <option value="4" >SAMPLE4</option>
+                        </select>
+                    </div>
+                    <div class="fluid_container inline-block">
+                        <input type="text" class="inline-block" placeholder="FIRST NAME*"/>
+                        <input type="text" class="inline-block" placeholder="LAST NAME*"/>
+                        <input type="text" class="inline-block" placeholder="EMAIL ADDRESS*"/>
+                    </div>
+                    <div class="join_button inline-block">
+                        <button><a href="#">JOIN</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Subscribe -->
+
+
+        <footer>
+            <div class="container">
+                <div class="lets_connect row">
+                    <div class="footer_title">
+                        LET'S CONNECT
+                    </div>
+                    <div class="social_links">
+                        <span><a href="#"><img src="img/tripadvisor_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/instagram_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/youtube_icon.jpg" /></a></span>
+                        <span><a href="#"><img src="img/facebook_icon.jpg" /></a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="full-width footer_wrapper clearfix">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer_col">
+                        <div class="footer_title">
+                            GETTING HERE
+                        </div>
+                        <div class="address">
+                            Ground floor, 101 Waterfront way, Docklands, VIC 3008, Melbourne
+                        </div>
+                        <div class="direction">
+                            <a href="#">
+                            <img src="img/direction_arrow.png" style="margin-bottom:6px"/> DIRECTIONS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 footer_col">
+                        <div class="footer_title">
+                            INSTAGRAM
+                        </div>
+                        <div id="instafeed2">
+                        </div>
+                    </div>
+                    <div class="col-md-4 footer_col">
+                        <div class="footer_title">
+                            QUICK LINKS
+                        </div>
+                        <div class="footer_links">
+                            <div><a>Plan Your Visit</a></div>
+                            <div><a>Pricing &amp; Ticketing</a></div>
+                            <div><a>Buy Tickets</a></div>
+                            <div><a>Functions &amp; Events</a></div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+            </div>
+            <div class="container copyright_area">
+                <div class="row">
+                    <div class="footer_bottom_left inline-block">
+                        &#169; Melbourne Star Observation Wheel 2011 ABN 84 165 079 390
+                    </div>
+                    <div class="pull-right inline-block visible-lg">
+                        <ul class="footer_bottom_links">
+                            <li class="root inline-block">
+                                <a href="#" class="inline-block " >
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Disclaimer
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    about us
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    Sitemap
+                                </a>
+                            </li>
+                            <li class="root">
+                                <a href="#" class="inline-block " >
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            $( function() {
+                $( '#cd-dropdown' ).dropdown();
+            });
+        </script>
+
+
+        <!-- instafeed -->
+        <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"></script>
+        <script type="text/javascript" src="js/project/instagram2.js"></script>
+
+        <!-- The following js files has been used site widely -->
+        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/custom_dropdown.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"></script>
+
+    </body>
+</html>
