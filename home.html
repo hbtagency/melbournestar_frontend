@@ -13,6 +13,7 @@
         <!-- JS init -->
         <script type="text/javascript" src="js/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="plugins/custom_dropdown/modernizr.custom.63321.js"></script>
         <!-- For dropdown effect on subscription section and this has to be on top of body -->
         <!--
         <script language="javascript">
@@ -885,7 +886,19 @@ What's New -->
                     </div>
                 </div>
                 <div class="row subscribe_form">
-                    
+                    <div class="interst inline-block">
+                    <!-- <select>
+                        <option value="interests">INTERESTS</option>
+                        <option value="test">TEST</option>
+                    </select> -->
+                    <select id="cd-dropdown" class="cd-select">
+                        <option value="-1" selected>INTERESTS</option>
+                        <option value="1" >SPORT</option>
+                        <option value="2" >GAME</option>
+                        <option value="3" >TV</option>
+                        <option value="4" >OTHERS</option>
+                    </select>
+                </div>
                     <div class="fluid_container inline-block">
                         <input type="text" class="inline-block" placeholder="FIRST NAME*"/>
                         <input type="text" class="inline-block" placeholder="LAST NAME*"/>
@@ -995,19 +1008,20 @@ What's New -->
 
 
         <!-- instafeed -->
-        <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"></script>
-        <script type="text/javascript" src="js/project/instagram2.js"></script>
-
+        <script type="text/javascript" src="plugins/instafeed/instafeed2.min.js"/>
+        <script type="text/javascript" src="js/project/instagram2.js"/>
+        <script type="text/javascript" src="plugins/custom_dropdown/jquery.dropdown.js"/>
+        <script type="text/javascript" src="js/project/sitewide/custom_dropdown.js"/>        
 
         <!-- The following js files has been used site widely -->
-        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/body_mask.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/ticket.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"></script>
-        <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"></script>
+        <script type="text/javascript" src="js/project/sitewide/transform_view_button.js"/>
+        <script type="text/javascript" src="js/project/sitewide/full_height_menu.js"/>
+        <script type="text/javascript" src="js/project/sitewide/body_mask.js"/>
+        <script type="text/javascript" src="js/project/sitewide/rotate.js"/>
+        <script type="text/javascript" src="js/project/sitewide/ticket.js"/>
+        <script type="text/javascript" src="js/project/sitewide/sticky_nav.js"/>
+        <script type="text/javascript" src="js/project/sitewide/rotate_logo.js"/>
+        <script type="text/javascript" src="js/project/sitewide/parralax_banner.js"/>
 
     </body>
 </html>
